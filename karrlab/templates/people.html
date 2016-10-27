@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block head_title %}{{ block.super }} :: People{% endblock %}
+
+{% block content %}
+<div class="bio">
+
+	<h3>Lab members</h3>
+	{% include "people/chew.html" %}
+	{% include "people/goldberg.html" %}
+	{% include 'people/karr.html' %}
+	{% include "people/rodriguez.html" %}
+	{% include 'people/roth.html' %}
+	{% include 'people/sekar.html' %}
+
+	{% comment %}
+	<h3>Honorary lab members</h3>
+	{% include 'people/gomes.html' %}
+	{% include 'people/meyer.html' %}
+	{% endcomment %}
+
+	<h3>Alumni</h3>
+	<ul>
+		<li><b>Anne Marie Barrette</b>: Then: Rotation Student. Now: PhD student in Marc Birtwistle's Lab at Mount Sinai.</li>
+		<li><b>Laura Deming</b>: Then: Visting Researcher. Now: venture capitalist at the Longevity Fund.</li>
+		<li><b>Graeme Gossel</b>: Then: Postdoctoral Fellow. Now: Postdoctoral Fellow in the Department of Physics &amp; Astronomy at Hunter College</li>
+	</ul>
+
+	See our <a href="{% url alumni %}">alumni page</a> for more information.
+
+	<h3>Collaborators</h3>
+	<ul>
+		<li>Yonathan Arfi, INRA <a href="https://fr.linkedin.com/in/yonathanarfi"><i class="fi-social-linkedin"></i></a></li>
+		<li>Alain Blanchard, INRA <a href="http://www6.bordeaux-aquitaine.inra.fr/bfp_eng/Research/Team-Mollicutes"><i class="fi-link"></i></a></li>
+		<li>Rui Chang, Mt Sinai <a href="http://research.mssm.edu/changlab/"><i class="fi-link"></i></a></li>
+		<li>Carole Lartigue, INRA  <a href="https://fr.linkedin.com/pub/carole-lartigue/9/34/674"><i class="fi-social-linkedin"></i></a></li>
+		<li>Maria Lluch-Senar, CRG <a href="https://www.linkedin.com/pub/maria-lluch-senar/89/903/314"><i class="fi-social-linkedin"></i></a></li>
+		<li>Pablo Meyer, IBM &amp; Mt Sinai <a href="http://researcher.watson.ibm.com/researcher/view.php?person=us-pmeyerr"><i class="fi-link"></i></a></li>
+		<li>Eric Schadt, Mt Sinai <a href="https://www.mountsinai.org/profiles/eric-schadt"><i class="fi-link"></i></a></li>
+		<li>Luis Serrano, CRG <a href="http://sb.crg.es/serrano_lab/"><i class="fi-link"></i></a></li>
+		<li>Pascal Sirand, INRA</li>
+		<li>Jörg Stülke, University of Göttingen <a href="https://www.uni-goettingen.de/en/58040.html"><i class="fi-link"></i></a></li>
+
+		{% comment %}
+		<li>Akira Funahashi, Keio <a href="http://fun.bio.keio.ac.jp/"><i class="fi-link"></i></a></li>
+		<li>Jonathan Irish, Vanderbilt University <a href="https://my.vanderbilt.edu/irishlab/"><i class="fi-link"></i></a></li>
+		<li>Nikesh Kotecha, Cytobank <a href="http://www.cytobank.org/"><i class="fi-link"></i></a></li>
+		<li>Tim Lu, MIT <a href="http://www.rle.mit.edu/sbg/"><i class="fi-link"></i></a></li>
+		<li>Dariusz Plewczynski, University of Warsaw <a href="http://business2science.com/"><i class="fi-link"></i></a></li>
+		<li>Oliver Purcell, MIT <a href="https://www.linkedin.com/pub/oliver-purcell/15/325/306"><i class="fi-social-linkedin"></i></a></li>
+		<li>Koichi Takahasi, RIKEN <a href="http://www.qbic.riken.jp/english/research/outline/lab-11.html"><i class="fi-link"></i></a></li>
+		<li>Gustavo Stolovitzky, IBM &amp; Mt Sinai <a href="http://researcher.watson.ibm.com/researcher/view.php?person=us-gustavo"><i class="fi-link"></i></a></li>
+		{% endcomment %}
+	</ul>
+
+	<h3>Lab photos</h3>
+	{% include 'people/photos.html' %}
+</div>
+
+{% endblock %}

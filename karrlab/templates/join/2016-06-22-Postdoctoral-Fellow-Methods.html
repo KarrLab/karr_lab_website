@@ -1,0 +1,35 @@
+{% extends "joinJob.html" %}
+
+{% load static %}
+
+{% block head_title %}{{ block.super }} :: Join us :: Postdoctoral Fellow or Engineer in high-performance whole-cell simulation{% endblock %}
+{% block page_title %}Postdoctoral Fellow or Engineer in high-performance whole-cell simulation{% endblock %}
+{% block page_pdf %}<a href="{% get_static_prefix %}/doc/jobs/2016-06-22-Postdoctoral-Fellow-Methods.pdf"><i class="fi-print" title="PDF"></i></a>{% endblock %}
+
+{% block job_details %}
+<div class="area">
+	<h4>Responsibilities</h4>
+  <p>To enable larger whole-cell models, including models of human cells, the Postdoctoral Fellow/Engineer will develop new methods for simulating large, multi-algorithmic whole-cell models. This will include developing a new algorithm for concurrently integrating mathematically heterogeneous submodels that share state and implementing this as a high-performance, parallel simulation software system. The Postdoctoral Fellow/Engineer would work closely with our team at Mount Sinai, as well as our parallel simulation collaborators Drs. Peter Barnes <a href="http://people.llnl.gov/pdbarnes"><i class="fi-link"></i></a> and David Jefferson <a href="http://people.llnl.gov/jefferson6"><i class="fi-link"></i></a> at Lawrence Livermore National Laboratory and our broader international team of collaborators. The Postdoctoral Fellow/Engineer would also have many opportunities to work with our team to build and analyze whole-cell models.
+</div>
+
+<div class="area">
+	<h4>Desired skills/experience</h4>
+  <p>Whole-cell modeling is a highly interdisciplinary problem. Consequently, we're looking for people with a broad range of skills and experience. The ideal candidate has the following skills. Applicants with related experience are also encouraged to apply.
+  <ul class="inpara">
+        <li>PhD in computational biology, applied math, computer science, or related field;</li>
+        <li>Strong experience in numerical simulation and algorithms;</li>
+        <li>Broad knowledge of biology, physics, and mathematics;</li>
+        <li>Deep commitment to innovation and desire to tackle the most challenging problems;</li>
+        <li>Abilities to solve challenging problems by thinking creatively, integrating diverse concepts, and pushing through barriers;</li>
+        <li>Passion for transforming bioengineering and medicine;</li>
+        <li>Excellent oral and written communication skills; and</li>
+        <li>Abilities to work independently and within a team.</li>
+    </ul>
+  </p>
+</div>
+
+<div class="area">
+	<h4>Funding and duration</h4>
+  <p>This position is supported by a three-year NSF INSPIRE award.<p>
+</div>
+{% endblock %}

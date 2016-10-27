@@ -1,0 +1,140 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block head_title %}{{ block.super }} :: Resources{% endblock %}
+
+{% block content %}
+<h3>Software</h3>
+
+<div>
+	<p>Please use the links below to use the free, hosted versions of our software and download source code.</p>
+	<p>In addition to the software packages listed here, we have also developed several utility libraries. These can be obtained from our <a href="http://www.mathworks.com/matlabcentral/fileexchange/authors/102860">MATLABCentral page</a>.</p>
+</div>
+
+<div class="block">
+	<div class="block-head">
+			<b>Whole-cell</b>
+			<a href="http://www.wholecell.org"><i class="fi-link" title="Use hosted version"></i></a>
+			<a href="https://simtk.org/home/wholecell"><i class="fi-download" title="Download software"></i></a>
+	</div>
+	<div class="block-body">
+		<p>The first "whole-cell" model of the bacterium <i>M. genitalium</i>. Provides all MATLAB simulation code, training data, detailed results, and MATLAB code for analysis of whole-cell simulations. Also provides an interactive web-based interface to the training data.</p>
+	</div>
+</div>
+
+<div class="block">
+	<div class="block-head">
+			<b>WholeCellKB</b>
+			<a href="http://www.wholecellkb.org"><i class="fi-link" title="Use hosted version"></i></a>
+			<a href="https://simtk.org/home/wholecell"><i class="fi-download" title="Download software"></i></a>
+	</div>
+	<div class="block-body">
+		<p>Web-based software for creating model organism databases for whole-cell models. Implemented in Python using the Django framework.</p>
+	</div>
+</div>
+
+<div class="block">
+	<div class="block-head">
+			<b>WholeCellSimDB</b>
+			<a href="http://www.wholecellsimdb.org"><i class="fi-link" title="Use hosted version"></i></a>
+			<a href="https://simtk.org/home/wholecell"><i class="fi-download" title="Download software"></i></a>
+	</div>
+	<div class="block-body">
+		<p>Database for storing and retrieving whole-cell simulations. Implemented in Python using the Django framework, h5py, and MySQL. Includes a web-based user interface developed using flot.</p>
+	</div>
+</div>
+
+<div class="block">
+	<div class="block-head">
+			<b>WholeCellViz</b>
+			<a href="http://www.wholecellviz.org"><i class="fi-link" title="Use hosted version"></i></a>
+			<a href="https://simtk.org/home/wholecell"><i class="fi-download" title="Download software"></i></a>
+	</div>
+	<div class="block-body">
+		<p>Web-based software for exploratory data analysis of whole-cell simulations. Implemented in JavaScript using jQuery, flot, and three.js.</p>
+	</div>
+</div>
+
+<div class="block">
+	<div class="block-head">
+			<b>Integrated flux-balance analysis (iFBA)</b>
+				<!--<a href="http://covertlab.stanford.edu/iFBA"><i class="fi-link" title="Use hosted version"></i></a>-->
+				<a href="https://simtk.org/home/ifba"><i class="fi-download" title="Download software"></i></a>
+	</div>
+	<div class="block-body">
+		<p>Provides MATLAB code and results for a  computational model of <i>E. coli</i> which integrates an ordinary differential equation model of central carbon metabolism, a flux-balance analysis model of all of metabolism, and a Boolean model of transcriptional regulation.</p>
+	</div>
+</div>
+
+<div class="block">
+	<div class="block-head">
+			<b>NetworkPainter</b>
+			<a href="http://cytobank.org/networkpainter.html"><i class="fi-link" title="Cytobank hosted version"></i></a>
+      <a href="http://covert.stanford.edu/networkpainter"><i class="fi-link" title="Standalone hosted version"></i></a>
+	</div>
+	<div class="block-body">
+		<p>Graphical user interface for easily creating signaling network diagrams animated with biomolecular data. Exports signaling diagrams to various formats including Flash. Provides all ActionScript and PHP code.</p>
+	</div>
+</div>
+
+<h3 style="margin-top:40px">Courses</h3>
+
+<div class="block">
+	<div class="block-head">
+			<b>Whole-cell modeling summer school, April 2016</b>
+			<a href="http://www.wholecell.org/school-2016.html"><i class="fi-link" title="Info"></i></a>
+	</div>
+	<div class="block-body">
+		<p>6-day summer school on whole-cell modeling featuring didactic lectures and hands-on tutorials with experts in computational and experimental systems biology.</p>
+    <ul>
+      <li>Location: Center for Regulatory Genomics, Barcelona, Spain</li>
+      <li>Date: April 3-8 2016</li>
+			<li>Application deadline: November 2015</li>
+    </ul>
+	</div>
+</div>
+
+<div class="block">
+	<div class="block-head">
+			<b>Whole-cell modeling workshop, March 2016</b>
+			<!--<a href=""><i class="fi-link" title="Info"></i></a>-->
+	</div>
+	<div class="block-body">
+		<p>1-day workshop focused on developing standards for whole-cell modeling.</p>
+    <ul>
+      <li>Location: Center for Interdisciplinary Research, Paris, France</li>
+      <li>Date: March 29, 2016</li>
+    </ul>
+	</div>
+</div>
+
+<div class="block">
+	<div class="block-head">
+			<b>Whole-cell modeling/standards workshop, March 2015</b>
+			<a href="https://sites.google.com/site/vwwholecellsummerschool"><i class="fi-link" title="Info"></i></a>
+	</div>
+	<div class="block-body">
+		<p>5-day summer school focused on evaluating standards for whole-cell modeling.</p>
+    <ul>
+      <li>Location: Rostock, Germany</li>
+      <li>Date: March 9-13, 2015</li>
+			<li>Application deadline: October 31, 2014</li>
+    </ul>
+	</div>
+</div>
+
+
+<h3 style="margin-top:40px">Information</h3>
+
+<div class="block">
+	<div class="block-head">
+			<b>Graduate fellowships information</b>
+			<a href="{% url resourcesGradFellowships %}"><i class="fi-link" title="Info"></i></a>
+	</div>
+	<div class="block-body">
+		<p>Collection of information about graduate fellowships and sample applications.</p>
+	</div>
+</div>
+
+{% endblock %}

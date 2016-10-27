@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block head_title %}{{ block.super }} :: Contact{% endblock %}
+
+{% block content %}
+
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC8cj-Pk_gmnEb8kwBIR5_EZKF1K2zujwQ"></script>
+<script type="text/javascript">
+var map;
+
+function initialize() {
+	var latLng = new google.maps.LatLng(40.795078040, -73.950299073);
+  var options = {
+        disableDefaultUI:true,
+    		zoom: 13,
+    		center: latLng,
+    		mapTypeId: google.maps.MapTypeId.ROADMAP
+    }
+
+    map = new google.maps.Map(document.getElementById("map-canvas"), options);
+
+    var contentString =
+		'<div>'+
+			'<div>'+
+				'Inst for Genomics &amp; Multiscale Biology<br/>'+
+				'Dept of Genetics &amp; Genomic Sciences'+
+			'</div>'+
+			'<div style="margin-top:6px;">'+
+				'1255 5th Avenue<br/>'+
+				'Suite C2, Room 114<br/>'+
+				'New York, NY 10029'+
+			'</div>'+
+			'<div style="margin-top:6px;">'+
+				'212-824-9664'+
+			'</div>'+
+			'<div style="margin-top:6px;">'+
+				'<a href="http://www.karrlab.org">www.karrlab.org</a><br/>'+
+				'<a href="mailto:karr@mssm.edu">karr@mssm.edu</a><br/> '+
+			'</div>'+
+		'</div>'
+		;
+    var infowindow = new google.maps.InfoWindow({
+        content: contentString,
+    });
+    var marker = new google.maps.Marker({
+        position: latLng,
+        map: map,
+        title: 'Karr Lab'
+    });
+    google.maps.event.addListener(marker, 'click', function() {
+      infowindow.open(map,marker);
+    });
+	  infowindow.open(map, marker);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
+<div class="map" id="map-canvas"></div>
+
+{% endblock %}

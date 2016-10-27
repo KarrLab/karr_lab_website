@@ -1,0 +1,31 @@
+{% extends "joinJob.html" %}
+
+{% load static %}
+
+{% block head_title %}{{ block.super }} :: Join us :: Postdoc in bacterial whole-cell modeling{% endblock %}
+{% block page_title %}Postdoctoral Fellow or Senior Scientist in bacterial whole-cell modeling{% endblock %}
+{% block page_pdf %}<a href="{% get_static_prefix %}/doc/jobs/2015-03-17-Scientist-Bacteria.pdf"><i class="fi-print" title="PDF"></i></a>{% endblock %}
+
+
+{% block job_details %}
+<div class="area">
+	<h4>Responsibilities</h4>
+  <p>The scientist will be responsible for developing a whole-cell model of <i>Mycoplasma pneumoniae</i> and using the model to design Mycoplasmas for bacterial-based drug delivery. This will include expanding the scope of our existing whole-cell models, incorporating new sources of high-throughput genomic data, and improving the accuracy of whole-cell models. The scientist will work closely with software developers to design a software platform for whole-cell modeling. The scientist will also collaborate with Luis Serrano's laboratory at the Center for Regulatory Genomics in Barcelona, Spain.</p>
+</div>
+
+<div class="area">
+	<h4>Desired skills/experience</h4>
+	<p>The ideal candidate has the following skills. Applicants with deep experience in related fields are also encouraged to apply.
+			<ul class="inpara">
+	    <li>PhD in computational biology or related field;</li>
+			<li>Deep experience in dynamical and genome-scale modeling;</li>
+			<li>Strong knowledge of biology, physics, mathematics, and computation;</li>
+			<li>Several years experience in computational systems biology is a plus;</li>
+			<li>Excellent object-oriented programming skills in Python or MATLAB;</li>
+			<li>Ability to learn new skills and concepts;</li>
+			<li>Excellent oral and written communication skills; and</li>
+			<li>Abilities to work independently and within a team effort</li>
+			</ul>
+	</p>
+</div>
+{% endblock %}

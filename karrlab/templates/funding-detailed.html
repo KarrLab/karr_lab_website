@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block head_title %}{{ block.super }} :: Funding{% endblock %}
+
+{% block content %}
+
+<h3>Funding</h3>
+<ul>
+  <li>2015-2018: ERASynBio 2<sup>nd</sup> joint call / National Science Foundation 13-510 MCB
+    <a href="https://www.erasynbio.eu/joint-calls/2nd-call"><i class="fi-link" title="ERASynBio"></i></a>
+    <a href="http://www.nsf.gov/funding/pgm_summ.jsp?pims_id=503626"><i class="fi-link" title="NSF"></i></a>
+    </li>
+  <li>2014-2015: James S. McDonnel Foundation Postdoctoral Fellowship Award in Studying Complex Systems
+    <a href="https://www.jsmf.org/apply/fellowship/"><i class="fi-link" title="JSMF"></i></a>
+    </li>
+  <li>2011-2013: National Science Foundation Graduate Fellowship
+    <a href="https://www.nsfgrfp.org/"><i class="fi-link" title="NSF GFRP"></i></a>
+    </li>
+  <li>2008-2011: National Defense Science and Engineering Graduate Fellowship
+    <a href="https://ndseg.asee.org/"><i class="fi-link" title="NDSEG  "></i></a>
+    </li>
+  <li>2006-2011: Stanford Graduate Fellowship
+    <a href="https://vpge.stanford.edu/fellowships-funding/sgf"><i class="fi-link" title="NDSEG  "></i></a>
+    </li>
+    <li>2006&ndash;2009: Department of Homeland Security Graduate Fellowship (declined)</li>
+</ul>
+
+<h3>Travel grants</h3>
+<ul>
+  <li>2013: Keystone Symposia NSF Scholarship</li>
+  <li>2013: Stanford University Office of Graduate Education Biosciences Travel Grant</li>
+  <li>2012: Keystone Symposia Future of Science Fund Scholarship</li>
+  <li>2011&ndash;2013: Stanford University Bio-X Travel Award</li>
+  <li>2010: Stanford University Vice Provost for Student Affairs SACNAS Workshop Grant</li>
+  <li>2010: Stanford Bioscience Student Association Conference Grant</li>
+</ul>
+
+<div class="logos">
+    <a href="http://www.nsf.gov">
+      <img src="{% get_static_prefix %}/img/funding/nsf.thumb.png" />
+    </a>
+    <a href="http://www.erasynbio.eu/" >
+      <img src="{% get_static_prefix %}/img/funding/erasynbio.thumb.png" />
+    </a>
+    <a href="http://www.jsmf.org/apply/fellowship" >
+      <img src="{% get_static_prefix %}/img/funding/jsmf.thumb.png" />
+    </a>
+    <a href="http://www.nsfgrfp.org/" >
+      <img src="{% get_static_prefix %}/img/funding/nsf-grfp.thumb.png" />
+    </a>
+    <a href="http://www.dod.gov" >
+      <img src="{% get_static_prefix %}/img/funding/dod.thumb.png" />
+    </a>
+    <a href="http://www.asee.org" >
+      <img src="{% get_static_prefix %}/img/funding/asee.thumb.png" />
+    </a>
+    <a href="https://vpge.stanford.edu/fellowships-funding/sgf" >
+      <img src="{% get_static_prefix %}/img/funding/sgf.thumb.png" />
+    </a>
+</div>
+
+
+{% endblock %}

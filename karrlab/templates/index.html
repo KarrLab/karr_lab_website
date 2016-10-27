@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block content %}
+<div class="clearing-assembled show-for-medium-up">
+  	<div class>
+    		<a href="#" class="clearing-close">&times;</a>
+    		<div class="visible-img" style="display:none;">
+      			<img />		
+      			<p class="clearing-caption"></p>
+      			<a href="#" class="clearing-main-prev"><span></span></a>
+      			<a href="#" class="clearing-main-next"><span></span></a>
+    		</div>
+    		<div class="carousel">
+      			<ul class="clearing-thumbs splash-thumbs" data-clearing>
+        				<li>
+                    <a class="th" href="{% get_static_prefix %}/img/splash-page/whole-cell-model-overview.png">
+                        <img src="{% get_static_prefix %}/img/splash-page/whole-cell-model-overview.png" data-caption="M. genitalium whole-cell model" />
+                    </a>
+                </li>
+        				<li>
+                    <a class="th" href="{% get_static_prefix %}/img/splash-page/whole-cell-fig3d.png">
+                        <img src="{% get_static_prefix %}/img/splash-page/whole-cell-fig3d.png" data-caption="Predicted protein-DNA binding" />
+                    </a>
+                </li>
+        				<li>
+                    <a class="th" href="{% get_static_prefix %}/img/splash-page/whole-cell-fig3a.png">
+                        <img src="{% get_static_prefix %}/img/splash-page/whole-cell-fig3a.png" data-caption="Predicted protein-DNA binding" />
+                    </a>
+                </li>
+        				<li>
+                    <a class="th" href="{% get_static_prefix %}/img/splash-page/whole cell visualization mockup.png">
+                        <img src="{% get_static_prefix %}/img/splash-page/whole cell visualization mockup.png" data-caption="WholeCellViz mockup" />
+                    </a>
+                </li>
+        				<li>
+                    <a class="th" href="{% get_static_prefix %}/img/splash-page/whole-cell-cover1.jpg">
+                        <img src="{% get_static_prefix %}/img/splash-page/whole-cell-cover1.jpg" data-caption="M. genitalium whole-cell model" />
+                    </a>
+                </li>
+        				<li>
+                    <a class="th" href="{% get_static_prefix %}/img/splash-page/whole-cell-cover2.jpg">
+                        <img src="{% get_static_prefix %}/img/splash-page/whole-cell-cover2.jpg" data-caption="M. genitalium whole-cell model" />
+                    </a>
+                </li>
+      			</ul>
+    		</div>
+  	</div>
+</div>
+  
+<p>Biology is complex. Even the simplest organisms such as <i>M. genitalium</i> are amazingly complex, containing hundreds of genes and an untold number of molecular interactions. Humans beings are unimaginably complex. Humans have all of the complexity of individual cells as well as the complexity of tissues, organs, and entire organisms.</p>
+
+<p>Despite decades of experimental and computational research, we still don't have an integrated understanding of how phenotypes emerge from the level of individual molecules. Novel computational techniques which integrate heterogeneous data and mathematics are desperately needed to tackle the overwhelming complexity of biology.</p>
+
+<p><b>Our goal is to understand and reverse engineer the complexity of biology to enable (1) personalized and predictive medicine and (2) rational bioengineering.</b> As a stepping stone in this direction, we've recently focused on two specific questions:
+  <ul class="inpara">
+    <li>How are complex cellular behaviors such as growth controlled at the molecular level? Which enzymes exert the most control over growth? How fast can a species be engineered to grow? What gene expression distribution maximizes cellular growth?</li>
+    <li>What are the minimal requirements for biological life? What is the minimal gene complement? Media? What is the minimum amount of energy needed to support life?</li>
+  </ul>
+</p>
+
+<p>Our approach is to develop comprehensive computational models, and to compare model predictions to experimental data. We believe these models are essential to reverse engineering biology. Achieving these models requires substantial innovation:
+  <ul class="inpara">
+      <li>Developing computational frameworks, algorithms, and databases which integrate heterogeneous data and math.</li>
+      <li>Building new exploratory data analysis tools for large-scale data and models.</li>
+      <li>Exploring new paradigms for collaboratively developing large-scale models.</li>
+  </ul>
+</p>
+{% endblock %}

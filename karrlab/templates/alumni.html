@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block head_title %}{{ block.super }} :: People :: Alumni{% endblock %}
+
+{% block content %}
+<div class="bio">
+
+	<h3>Alumni</h3>
+  {% include "people/barrette.html" %}
+  {% include "people/deming.html" %}
+	{% include "people/gossel.html" %}  
+</div>
+
+{% endblock %}

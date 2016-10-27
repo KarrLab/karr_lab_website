@@ -1,0 +1,100 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block head_title %}{{ block.super }} :: Resources :: Graduate fellowships{% endblock %}
+
+{% block content %}
+
+<div>
+	<p>Below is a collection of resources on winning graduates collected from experience applying for fellowships, working with students, and reviewing NSF GFRP applications.</p>
+</div>
+
+<div class="block">
+	<div class="block-head">
+        <h3>Graduate fellowships</h3>
+	</div>
+	<div class="block-body">
+        <p>Below is a list of the largest and broadest graduate fellowship programs. The fellowships are listed in order of suggested focus. The NSF GRFP is the largest, broadest, and one of the most prestigious fellowship programs. If only apply for one fellowship, I recommend you apply for the NSF. Fellowships lower on the list have narrower focus and support smaller numbers of awards.</p>
+        <p>Please note, this is not a comprehensive list. In addition to these, there are many more fellowships with narrower academic, geographic, and or demographic focus. Several universities including <a href="https://www.gradschool.cornell.edu/fellowships">Cornell</a>, <a href="https://researchfunding.duke.edu">Duke</a> and <a href="https://grad.ucla.edu/funding/">UCLA</a> maintain excellent databases of graduate fellowship opportunities.</p><br/>
+		<table cellspacing="0" cellpadding="0" id="fellowships" width="100%">
+        <thead>
+        <tr>
+            <th>Sponsor</th>
+            <th>Fellowship</th>
+            <th>Deadline</th>
+            <th>Notes</th>
+        </thead>
+        <tbody>
+        <tr><td>National Science Foundation (NSF)</td><td><a href="http://www.nsfgrfp.org/">GRFP</a></td><td>10/26</td><td>Largest number of awards</td></tr>
+        <tr><td>Department of Defense (DoD)</td><td><a href="http://ndseg.asee.org/">NDSEG</a></td><td>12/18</td><td>&nbsp;</td></tr>
+        <tr><td>Department of Energy (DoE)</td><td><a href="http://www.krellinst.org/csgf/">CSGF</a></td><td>January</td><td>For computational science</td></tr>
+        <tr><td>Hertz Foundation</td><td><a href="http://www.hertzfoundation.org/">Graduate Fellowship</a></td><td>10/30</td><td>Most competitive</td></tr>
+        <tr><td>Paul &amp; Daisy Soros</td><td><a href="http://www.pdsoros.org/">Fellowships for New Americans</a></td><td>11/1</td><td>For new americans</td></tr>
+        <tr><td>National Institutes of Health (NIH)</td><td><a href="http://grants.nih.gov/training/nrsa.htm">F31</a></td><td>12/8, 4/8, 8/8 </td><td>&nbsp;</td></tr>
+        <tr><td>Ford Foundation</td><td><a href="http://sites.nationalacademies.org/pga/fordfellowships/">Fellowships Program</a></td><td>11/20</td><td>Promotes diversity</td></tr>
+        <tr><td>National Physical Science Consortium (NPSC)</td><td><a href="http://www.npsc.org/">Fellowship</a></td><td>11/30</td><td>&nbsp;</td></tr>
+        <tr><td>Department of Defense (DoD)</td><td><a href="http://smart.asee.org/">SMART</a></td><td>12/1</td><td>&nbsp;</td></tr>
+        </tbody>
+        </table>
+	</div>
+</div>
+
+<div class="block">
+	<div class="block-head">
+        <h4>Advice</h4>
+	</div>
+	<div class="block-body">
+        <ul>
+					<li>NSF
+						<ul>
+							<li><a href="{% get_static_prefix %}/doc/fellowships/advice/NSF prompts.pdf">NSF prompts (pdf)</a></li>
+							<li><a href="{% get_static_prefix %}/doc/fellowships/advice/NSF advice.pdf">NSF advice (pdf)</a></li>
+							<li><a href="{% get_static_prefix %}/doc/fellowships/advice/NSF essay preparation grid.xls">NSF essay preparation grid (xls)</a></li>
+							<li><a href="http://www.pgbovine.net/fellowship-tips.htm">Philip Guo</a></li>
+	            <li><a href="http://www.alexhunterlang.com/nsf-fellowship">Alex Lang</a></li>
+	            <li><a href="http://www.jenniferwang.org/nsf.html">Jennifer Wang</a></li>
+						</ul></li>
+        <li>NDSEG
+					<ul>
+						<li><a href="{% get_static_prefix %}/doc/fellowships/advice/NDSEG prompt and advice.pdf">NDSEG prompt and advice (pdf)</a></li>
+					</ul></li>
+        </ul>
+	</div>
+</div>
+
+<div class="block">
+	<div class="block-head">
+        <h4>Sample essays</h4>
+	</div>
+	<div class="block-body">
+		<ul>
+			<li>NSF
+				<ul>
+				<li><a href="https://biology.mit.edu/sites/default/files/NSF_proposals_102309.pdf">MIT Biology</a></li>
+				<li><a href="http://rachelcsmith.com/academics/nsf.htm">Berkeley Environmental Science, Policy, &amp; Management</a>
+				<li><a href="http://grads.astro.cornell.edu/sample_essays/">Cornell Astronomy</a>
+				<li><a href="http://blog.owu.edu/writingcenter/files/2012/07/Sample-Scholarship-Personal-Essays-and-Research-Proposals.pdf">Ohio Wesleyan</a></li>
+				<li><a href="http://www.graduate-mentor.com/nsf-graduate-fellowship/">Jan Allen</a>
+				</ul>
+			<li>NDSEG
+				<ul>
+					<li><a href="{% get_static_prefix %}/doc/fellowships/applications/jkarr_NDSEG_SummaryOfGoals.docx">Example</a></li>
+				</ul>
+		</ul>
+	</div>
+</div>
+
+<div class="block">
+	<div class="block-head">
+        <h4>Info session</h4>
+	</div>
+	<div class="block-body">
+		<ul>
+			<li><a href="{% get_static_prefix %}/doc/fellowships/presentations/2015_09_10_presentation.pdf">Info session presentation</a></li>
+			<li><a href="{% get_static_prefix %}/doc/fellowships/presentations/2015_09_10_handout.pdf">Info session handout</a></li>
+		</ul>
+	</div>
+</div>
+
+{% endblock %}

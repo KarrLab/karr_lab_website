@@ -1,0 +1,293 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block head_title %}{{ block.super }} :: Publications{% endblock %}
+
+{% block content %}
+
+<div class="area">
+<h3>Peer-reviewed publications</h3>
+<p>
+<ol>
+  <li class="pub">
+      <div class="cite">
+        Cokelaer T, Bansal M, Bare C, Bila E, Bot BM, Neto EC, Eduati F, Gönen M, Hill SM, Hoff B, <b>Karr JR</b>, Küffner R, Menden MP, Meyer P, Nore R, Pratap A, Prill RJ, Weirauch MT, Costello JC, Stolovitzky G &amp; Saez-Rodriguez J. DREAMTools: a Python package for scoring collaborative challenges. <i>F1000Res</i> 4, 1030 (2015).
+      </div>
+      <div class="links">
+          <a href="http://f1000research.com/articles/4-1030/v1"><i class="fi-page-doc" title="HTML"></i></a>
+          <a href="{% get_static_prefix %}/doc/papers/Cokelaer2015.pdf"><i class="fi-print" title="PDF"></i></a>
+          <a href="https://github.com/dreamtools"><i class="fi-social-github" title="GitHub"></i></a>
+          <a href="https://pypi.python.org/pypi/dreamtools"><i class="fi-link" title="PyPI"></i></a>
+      </div>
+  </li>
+
+  <li class="pub">
+      <div class="cite">
+      Kazakiewicz D<sup>*</sup>, <b>Karr JR<sup>*,&dagger;</sup></b>, Langner KM &amp; Plewczynski D<sup>&dagger;</sup>. Combined systems and structural modeling repositions antibiotics for <i>Mycoplasma genitalium</i>. <i>Comput Biol Chem</i> pii, S1476-9271(15)30089-X (2015).
+      </div>
+      <div class="links">
+        <a href="http://www.sciencedirect.com/science/article/pii/S147692711530089X"><i class="fi-page-doc" title="HTML"></i></a>
+        <a href="{% get_static_prefix %}/doc/papers/Kazakiewicz2015.pdf"><i class="fi-print" title="PDF"></i></a>
+      </div>
+  </li>
+
+    <li class="pub">
+    		<div class="cite">
+    		    <b>Karr JR</b>, Williams AH, Zucker JD, Raue A, Steiert B, Timmer J, Kreutz C, DREAM8 Parameter Estimation Challenge Consortium, Wilkinson S, Allgood BA, Bot BM, Hoff BR, Kellen MR, Covert MW, Stolovitzky GA &amp; Meyer P. Summary of the DREAM8 parameter estimation challenge: Toward parameter identification for whole-cell models. <i>PLoS Comput Biol</i> <b>11</b>, e1004096 (2015).
+    		</div>
+        <div class="links">
+            <a href="https://www.synapse.org/#!Synapse:syn1876068"><i class="fi-link" title="Project website"></i></a>
+            <a href="{% url press %}#DREAM8"><i class="fi-burst" title="News"></i></a>
+            <a href="http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004096"><i class="fi-page-doc" title="HTML"></i></a>
+            <a href="{% get_static_prefix %}/doc/papers/Karr2015b.pdf"><i class="fi-print" title="PDF"></i></a>
+        </div>
+	  </li>
+
+    <li class="pub">
+        <div class="cite">
+            <b>Karr JR</b>, Guturu HG, Chen E, Blair S, Irish JM, Kotech N &amp; Covert MW. NetworkPainter: Dynamic intracellular pathway animation in Cytobank. <i>BMC Bioinformatics</i> <b>16</b>, 172 (2015).
+        </div>
+        <div class="links">
+          <a href="http://cytobank.org/networkpainter.html"><i class="fi-link" title="Cytobank hosted version"></i></a>
+          <a href="http://covert.stanford.edu/networkpainter"><i class="fi-link" title="Standalone hosted version"></i></a>
+          <a href="http://www.biomedcentral.com/1471-2105/16/172"><i class="fi-page-doc" title="HTML"></i></a>
+          <a href="{% get_static_prefix %}/doc/papers/Karr2015.pdf"><i class="fi-print" title="PDF"></i></a>
+       </div>
+    </li>
+
+    <li class="pub">
+    		<div class="cite">
+    		    <b>Karr JR<sup>*</sup></b>, Phillips NC<sup>*</sup> &amp; Covert MW. WholeCellSimDB: a hybrid relational/HDF database for whole-cell model predictions. <i>Database</i> <b>2014</b>, bau095 (2014).
+    		</div>
+        <div class="links">
+            <a href="http://www.wholecellsimdb.org"><i class="fi-link" title="Software"></i></a>
+			      <a href="https://simtk.org/project/xml/downloads.xml?group_id=714#package_id1553"><i class="fi-download" title="Software"></i></a>
+            <a href="http://database.oxfordjournals.org/content/2014/bau095.long"><i class="fi-page-doc" title="HTML"></i></a>
+            <a href="{% get_static_prefix %}/doc/papers/Karr2014.pdf"><i class="fi-print" title="PDF"></i></a>
+		    </div>
+    </li>
+
+	<li class="pub">
+		<div class="cite">
+		Sanghvi JC, Regot S, Carrasco S, <b>Karr JR</b>, Gutschow MV, Bolival B &amp; Covert MW. Accelerated discovery via a whole-cell model. <i>Nat Methods</i> <b>10</b>, 1192&ndash;1195 (2013).
+		</div>
+		<div class="links">
+			<a href="http://www.nature.com/nmeth/journal/v10/n12/full/nmeth.2724.html"><i class="fi-page-doc" title="HTML"></i></a>
+			<a href="{% get_static_prefix %}/doc/papers/Sanghvi2013.pdf"><i class="fi-print" title="PDF"></i></a>
+		</div>
+	</li>
+	<li class="pub">
+		<div class="cite">
+		Lee R<sup>*</sup>, <b>Karr JR<sup>*</sup></b> &amp; Covert MW. WholeCellViz: data visualization for whole-cell models. <i>BMC Bioinformatics</i> <b>14</b>, 253 (2013).
+		</div>
+		<div class="links">
+			<a href="http://www.wholecellviz.org"><i class="fi-link" title="Project website"></i></a>
+			<a href="http://www.biomedcentral.com/1471-2105/14/253"><i class="fi-page-doc" title="HTML"></i><a>
+			<a href="{% get_static_prefix %}/doc/papers/Lee2013.pdf"><i class="fi-print" title="PDF"></i></a>
+			<a href="https://simtk.org/project/xml/downloads.xml?group_id=714#package_id1307"><i class="fi-download" title="Software"></i></a>
+		</div>
+	</li>
+	<li class="pub">
+		<div class="cite">
+		Purcell O, Jain B, <b>Karr JR</b>, Covert MW &amp; Lu T. Towards a whole-cell modeling approach for synthetic biology. <i>Chaos</i> <b>23</b>, 025112 (2013).
+		</div>
+		<div class="links">
+			<a href="http://scitation.aip.org/content/aip/journal/chaos/23/2/10.1063/1.4811182"><i class="fi-page-doc" title="HTML"></i><a>
+			<a href="{% get_static_prefix %}/doc/papers/Purcell2013.pdf"><i class="fi-print" title="PDF"></i></a>
+			<a href="https://simtk.org/project/xml/downloads.xml?group_id=714#package_id1388"><i class="fi-download" title="Software"></i></a>
+		</div>
+	</li>
+	<li class="pub">
+		<div class="cite">
+		<b>Karr JR</b>, Sanghvi JC, Macklin DN, Arora A &amp; Covert MW. WholeCellKB: model organism databases for comprehensive whole-cell models. <i>Nucleic Acids Res</i> <b>41</b>, D787&ndash;792 (2013).
+		</div>
+		<div class="links">
+			<a href="http://www.wholecellkb.org"><i class="fi-link" title="Project website"></i></a>
+			<a href="http://nar.oxfordjournals.org/lookup/doi/10.1093/nar/gks1108"><i class="fi-page-doc" title="HTML"></i><a>
+			<a href="{% get_static_prefix %}/doc/papers/Karr2013.pdf"><i class="fi-print" title="PDF"></i></a>
+			<a href="https://simtk.org/project/xml/downloads.xml?group_id=714#package_id1290"><i class="fi-download" title="Software"></i></a>
+		</div>
+	</li>
+	<li class="pub">
+		<div class="cite">
+		<b>Karr JR<sup>*</sup></b>, Sanghvi JC<sup>*</sup>, Macklin DN, Gutschow MV, Jacobs JM, Bolival B, Assad-Garcia N, Glass JI &amp; Covert MW. A whole-cell computational model predicts phenotype from genotype. <i>Cell</i> <b>150</b>, 389&ndash;401 (2012).
+		</div>
+		<div class="links">
+			<a href="http://www.wholecell.org"><i class="fi-link" title="Project website"></i></a>
+			<a href="http://www.sciencedirect.com/science/article/pii/S0092867412007763"><i class="fi-page-doc" title="HTML"></i><a>
+			<a href="{% get_static_prefix %}/doc/papers/Karr2012.pdf"><i class="fi-print" title="PDF"></i></a>
+			<a href="https://simtk.org/project/xml/downloads.xml?group_id=714#package_id1169"><i class="fi-download" title="Software"></i></a>
+			<a href="{% url press %}#whole-cell"><i class="fi-burst" title="News"></i></a>
+		</div>
+	</li>
+	<li class="pub">
+		<div class="cite">
+		Covert MW, Xiao N, Chen TJ &amp; <b>Karr JR</b>. Integrated flux balance analysis model of <i>Escherichia coli</i>. <i>Bioinformatics</i> <b>24</b>, 2044&ndash;50 (2008).
+		</div>
+		<div class="links">
+			<!--<a href="http://covertlab.stanford.edu/projects/iFBA/"><i class="fi-link" title="Project website"></i></a>-->
+			<a href="http://bioinformatics.oxfordjournals.org/content/24/18/2044.short"><i class="fi-page-doc" title="HTML"></i></a>
+			<a href="{% get_static_prefix %}/doc/papers/Covert2008.pdf"><i class="fi-print" title="PDF"></i></a>
+			<a href="http://simtk.org/home/ifba"><i class="fi-download" title="Software"></i></a>
+		</div>
+	</li>
+</ol>
+</p>
+</div>
+
+<div class="area">
+<h3>Conference proceedings</h3>
+<p>
+<ol>
+  <li class="pub">
+		<div class="cite">
+      <b>Goldberg AP</b>, <b>Chew YH</b> &amp; <b>Karr JR</b>. Toward scalable whole-cell modeling of human cells. <i>ACM SIGSIM Conference on Principles of Advanced Discrete Simulation</i>, 259&ndash;262 (2016).
+		</div>
+    <div class="links">
+      <a href="{% get_static_prefix %}/doc/papers/Goldberg2016a.pdf"><i class="fi-print" title="PDF"></i></a>
+      <a href="http://dx.doi.org/10.1145/2901378.2901402"><i class="fi-link" title="HTML"></i></a>
+    </div>
+  </li>
+
+  <li class="pub">
+		<div class="cite">
+      Kovatch P, Costa A, Chen R, Klein R, Costa KD, Hajjar RJ, Fayad Z, Margolies L, Mendelson D, Yankelevitz D, <b>Goldberg AP</b>, <b>Karr JR</b>, Rice JJ &amp; Gurev V. The potential for exascale to transform healthcare. <i>Supercomputing Frontiers</i> (2016).
+		</div>
+    <div class="links">
+      <a href="http://supercomputingfrontiers.com/2016/programme"><i class="fi-link" title="Conference program"></i></a>
+    </div>
+  </li>
+
+  <li class="pub">
+		<div class="cite">
+	    Chang R, <b>Karr JR</b> &amp; Schadt EE. Causal inference in biology networks with integrated belief propagation. <i>Pac Symp Biocomput</i>, 359&ndash;70 (2015).
+		</div>
+		<div class="links">
+      <a href="{% get_static_prefix %}/doc/papers/Chang2015.pdf"><i class="fi-print" title="PDF"></i></a>
+      <a href="http://psb.stanford.edu/psb-online/proceedings/psb15"><i class="fi-link" title="HTML"></i></a>
+	  </div>
+	</li>
+</ol>
+</p>
+</div>
+
+<div class="area">
+<h3>Reviews &amp; perspectives</h3>
+<p>
+<ol>
+  <li class="pub">
+      <div class="cite">
+        Medley JK, <b>Goldberg AP</b> &amp; <b>Karr JR</b>. Guidelines for reproducibly building and simulating systems biology models. <i>IEEE Trans Biomed Eng</i> <b>63</b>, 2015&ndash;2020 (2016). 
+      </div>
+      <div class="links">
+        <a href="http://ieeexplore.ieee.org/document/7514982/"><i class="fi-page-doc" title="HTML"></i><a>
+	      <a href="{% get_static_prefix %}/doc/papers/Medley2016.pdf"><i class="fi-print" title="PDF"></i></a>
+      </div>
+  </li>
+
+  <li class="pub">
+      <div class="cite">
+      Waltemath D<sup>*</sup>, <b>Karr JR<sup>*</sup></b> et al. Toward community standards and software for whole-cell modeling. <i>IEEE Trans Biomed Eng</i> <b>63</b>, 2007&ndash;2014 (2016).
+      </div>
+      <div class="links">
+        <a href="https://sites.google.com/site/vwwholecellsummerschool"><i class="fi-link" title="Summer school website"></i></a>
+        <a href="http://ieeexplore.ieee.org/document/7489010/"><i class="fi-page-doc" title="HTML"></i><a>
+	      <a href="{% get_static_prefix %}/doc/papers/Waltemath2016.pdf"><i class="fi-print" title="PDF"></i></a>
+      </div>
+  </li>
+
+  <li class="pub">
+      <div class="cite">
+          <b>Karr JR<sup>&dagger;</sup></b>, Takahasi K &amp; Funahashi A. The principles of whole-cell modeling. <i>Curr Opin Microbiol</i> <b>27</b>, 18&ndash;24 (2015).
+      </div>
+      <div class="links">
+        <a href="http://www.sciencedirect.com/science/article/pii/S1369527415000685"><i class="fi-page-doc" title="HTML"></i></a>
+        <a href="{% get_static_prefix %}/doc/papers/Karr2015c.pdf"><i class="fi-print" title="PDF"></i></a>
+      </div>
+  </li>
+</ol>
+</p>
+</div>
+
+<div class="area">
+<h3>White papers</h3>
+<p>
+<ol>
+  <li class="pub">
+      <div class="cite">
+          <b>Karr JR</b>, Lluch-Senar M, Serrano L &amp; Carrera J. Summary of the 2016 whole-cell modeling summer school (2016).
+      </div>
+      <div class="links">
+        <a href="http://www.wholecell.org/school-2016"><i class=fi-link></i></a>
+        <a href="{% get_static_prefix %}/doc/papers/Karr2016.pdf"><i class="fi-print" title="PDF"></i></a>
+      </div>
+  </li>
+
+  <li class="pub">
+      <div class="cite">
+          <b>Goldberg AP</b> &amp; <b>Karr JR</b>. Whole-Cell model simulations for medicine and bioengineering. In response to NIGMS Request for Information on Science Drivers Requiring Capable Exascale High Performance Computing (2015).
+      </div>
+      <div class="links">
+        <a href="{% get_static_prefix %}/doc/papers/Goldberg2015.pdf"><i class="fi-print" title="PDF"></i></a>
+        <a href="https://grants.nih.gov/grants/guide/notice-files/NOT-GM-15-122.html"><i class=fi-page-doc></i></a>
+      </div>
+  </li>
+</ol>
+</p>
+</div>
+
+<div class="area">
+<h3>Lay articles</h3>
+<p>
+<ol>
+  <li class="pub">
+      <div class="cite">
+          <b>Karr JR</b>, <b>Chew YH</b> &amp; <b>Goldberg AP</b>. Whole-cell computational models can predict how genes influence behavior. <i>Atlas of Science</i> (2015).
+      </div>
+      <div class="links">
+        <a href="http://atlasofscience.org/whole-cell-computational-models-can-predict-how-genes-influence-behavior/"><i class="fi-page-doc" title="HTML"></i></a>
+        <a href="{% get_static_prefix %}/doc/papers/Karr2015d.pdf"><i class="fi-print" title="PDF"></i></a>
+      </div>
+  </li>
+</ol>
+</p>
+</div>
+
+<!--
+<div class="area">
+<h3>In revision/submission/preparation</h3>
+<p>
+<ol>
+</ol>
+</p>
+</div>
+-->
+
+<!--
+<div class="area">
+<h3>Patents</h3>
+<p>
+<ol CONTINUE reversed>
+</ol>
+</p>
+</div>
+-->
+
+<br/>
+<div class="area">
+<p>
+    <sup>*</sup>These authors contributed equally to this work<br/>
+    <sup>&dagger;</sup>Corresponding author
+</p>
+</div>
+
+<div class="area">
+<p>View publications on
+<a href="http://www.ncbi.nlm.nih.gov/sites/myncbi/collections/public/1BmLgXOq-wmFzONUuAH1jRT5w/?sort=date&direction=ascending">PubMed</a> |
+<a href="http://scholar.google.com/citations?user=Yb5nVLAAAAAJ">Google Scholar</a> |
+<a href="http://www.researchgate.net/profile/Jonathan_Karr/">ResearchGate</a>
+</p>
+</div>
+
+{% endblock %}

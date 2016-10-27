@@ -1,0 +1,107 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block head_title %}{{ block.super }} :: Research{% endblock %}
+
+{% block content %}
+
+<h3>Research</h3>
+<div>
+	<p>Our goal is to enable predictive medicine and rational bioengineering. This requires (1) the ability to predict how complex biological behaviors arise from individual molecules and their interactions and (2) the ability to reverse engineer biological systems to have specific phenotypes. Although great progress has been made over the past several decades in the biochemical characterization of individual cells and organisms due to the advent of high-throughput measurement technologies, much work remains to understand and predict how phenotypes emerge. Novel computational techniques which integrate heterogeneous data and mathematics are needed to comprehend the overwhelming complexity of biology. These techniques will not only allow us to predict phenotype from genotype, but ultimately enable us to engineer genotypes to have desired phenotypes.</p>
+	<p>Under this general theme of understanding how complex phenotypes emerge from the detailed biochemistry inside individual cells, our interests are to:
+		<ul class="inpara">
+		<li>Develop the detailed, comprehensive computational models that will be required for predictive medicine and bioengineering.</li>
+		<li>Use large-scale models to drive biological discovery using experiments guided by model predictions. For example, use models to predict how complex cellular behaviors like growth are controlled at the molecular level and test these predictions experimentally. Investigate which enzymes exert the most control over the rate of cellular growth. Investigate the maximum rate at which an organism can grow. Identify the optimal distribution of gene expression which maximizes cellular growth.</li>
+		<li>Develop novel computational frameworks, algorithms, databases, and analysis tools which enable large-scale hybrid models.</li>
+		<li>Explore new paradigms for collaboratively developing large-scale models.</li>
+		</ul></p>
+	<p>Recently we developed and validated the first "whole-cell" model of the life cycle of a single cell in collaboration with <a href="http://covert.stanford.edu/">Markus Covert</a> and <a href="http://www.linkedin.com/pub/jayodita-sanghvi/7/105/34b?">Jayodita Sanghvi</a>. Toward this goal we've also developed new methods for model and data integration, model fitting and parameter estimation, and exploratory data analysis.</p>
+
+	<p>Please see below for more information about our recent projects. All of the software and data we've developed through these efforts is listed on the <a href="{% url resources %}">Resources</a> page.</p>
+</div>
+
+<div class="block">
+	<div class="block-head">
+		<h3>
+			<div class="row">
+				<div class="small-8 columns">
+					Whole-cell computational model of <i>M. genitalium</i>
+				</div>
+				<div class="small-4 columns">
+					<div class="links">
+						<a href="http://www.wholecell.org"><i class="fi-link" title="Project website"></i></a>
+						<a href="http://www.sciencedirect.com/science/article/pii/S0092867412007763"><i class="fi-page-doc" title="Scientific publication"></i><a>
+						<a href="https://simtk.org/project/xml/downloads.xml?group_id=714#package_id1169"><i class="fi-download" title="Software download"></i></a>
+						<a href="{% url press %}#whole-cell"><i class="fi-burst" title="News"></i></a>
+					</div>
+				</div>
+			</h3>
+		</div>
+	</div>
+	<div class="block-body">
+		<div class="row">
+		<div class="small-0 medium-4 columns">
+			<iframe width="100%" height="260" src="//www.youtube.com/embed/NQFQXnFlCNY?rel=0&modestbranding=1&showinfo=0" frameborder="0" allowfullscreen style="border:1px solid #aaa;"></iframe>
+		</div>
+		<div class="small-12 medium-8 columns">
+			<p>As a proof-of-principal for the detailed computational models that are needed for rational bioengineering and predictive medicine, we recently developed a model of <i>M. genitalium</i>, one of the smallest known freely culturable organisms.</p>
+			<p>The model accounts for the specific function of every annotated gene product and predicts dynamics of every molecular species over the entire cell cycle. The model is composed of 28 sub-models of cellular processes including replication, transcription, and translation. Each sub-model was implemented using different mathematics and trained using different experimental data. We validated the model against a broad range of publicly available data. We've used the model to gain several novel insights into cell physiology. The animation illustrates the predicted life cycle of one in silico cell.</p>
+			<p>Developing of the model afforded us an opportunity to think about how to build large hybrid models. As a result, constructing the model required us to develop a new computational platform, new algorithms, and new tools for data analysis. We believe these new methods and tools will be broadly applicable to the development of similarly comprehensive models of more complex organisms, and will ultimately form the basis of bio-CAD systems for bioengineering and medicine.</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="block">
+	<div class="block-head">
+		<h3>
+			<div class="row">
+				<div class="small-8 columns">
+					Integrated computational model of <i>E. coli</i>
+				</div>
+				<div class="small-4 columns">
+					<div class="links">
+						<!--<a href="http://covertlab.stanford.edu/projects/iFBA/"><i class="fi-link" title="Project website"></i></a>-->
+						<a href="http://bioinformatics.oxfordjournals.org/content/24/18/2044.short"><i class="fi-page-doc" title="Scientific publication"></i><a>
+						<a href="https://simtk.org/home/ifba"><i class="fi-download" title="Software download"></i></a>
+					</div>
+				</div>
+			</div>
+		</h3>
+	</div>
+	<div class="block-body">
+		<div class="row">
+			<div class="small-0 medium-4 columns">
+				<img src="{% get_static_prefix %}/img/iFBAmodel.gif" style="background:white; padding:4px; border:1px solid #aaa; width:100%;"/>
+			</div>
+			<div class="small-12 medium-8 columns">
+				<p>As a proof of principal for a whole-cell model composed of sub-models of distinct cellular processes, we developed a hybrid model of <i>E. coli</i>. This model consisted of a flux balance analysis model of global metabolism, an ODE model of central carbon metabolism, and a Boolean model of transcriptional regulation. The animation below displays the models predictions for the metabolic flux distribution of an <i>E. coli</i> culture growing in media containing glucose and lactose.</p>
+				<p>This model demonstrated the power of integrating multiple computational submodels to create a single more predictive model. Perhaps more importantly, the model provide us our first opportunity to investigate the mathematics and computational structures required for hybrid computational models.</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="block">
+	<div class="block-head">
+		<h3>
+			<div class="row">
+				<div class="small-8 columns">
+					Dynamical data visualization
+				</div>
+				<div class="small-4 columns">
+					<div class="links">
+						<a href="http://covert.stanford.edu/networkpainter/"><i class="fi-link" title="Project website"></i></a>
+					</div>
+				</div>
+			</div>
+		</h3>
+	</div>
+	<div class="block-body">
+		<p>Although biology is highly structured and highly dynamic, most data analysis tools ignore the network structure of biological data. Consequently, most analysis tools fail to take full advantage of biologists' prior knowledge and intuition.</p>
+		<p>We have developed web-based software for visualizing complex, dynamic data such as flow cytometry. The software provides a simple interface for drawing biological pathway diagrams, and for combining them with experimental data to produce animated pathway diagrams. The animation below displays flow cytometry T-cell data collected by <a href="http://my.vanderbilt.edu/irishlab/">Jonathan Irish</a> from the <a href="http://www.stanford.edu/group/nolan/">Nolan Lab</a>.</p>
+		<p>Most importantly, the software enables biologists to take full advantage of their prior knowledge and intuition when analyzing their data. Additionally, the software also enables scientists to quickly and easily explore very high dimensional datasets. We anticipate that this software will be broadly useful to researchers working with high-dimensional biomolecular data.</p>
+	</div>
+</div>
+{% endblock %}

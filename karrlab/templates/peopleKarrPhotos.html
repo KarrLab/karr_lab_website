@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block head_title %}{{ block.super }} :: People :: Jonathan Karr{% endblock %}
+
+{% block content %}                                               
+
+<div class="photos">
+  	<div class="row">
+  		  <div class="photo small-3 columns">
+            <img src="{% get_static_prefix %}/photos/headshot-karr-2012.thumb-223x223.jpg" />
+            <div class="row info">
+                <div class="caption small-10 columns">Jonathan Karr</div>
+                <div class="buttons small-2  columns show-for-medium-up"><a href="{% get_static_prefix %}/photos/headshot-karr-2012.jpg"><i class="fi-download" title="Download"></i></a></div>
+            </div>
+  		  </div>
+        <div class="photo small-3 columns">
+            <img src="{% get_static_prefix %}/photos/headshot-karr-2014-1.thumb-223x223.jpg" />
+            <div class="row info">
+                <div class="caption small-10 columns">Jonathan Karr</div>
+                <div class="buttons small-2  columns show-for-medium-up"><a href="{% get_static_prefix %}/photos/headshot-karr-2014-1.jpg"><i class="fi-download" title="Download"></i></a></div>
+            </div>
+  		  </div>
+        <div class="photo small-3 columns">
+            <img src="{% get_static_prefix %}/photos/headshot-karr-2014-2.thumb-223x223.jpg" />
+            <div class="row info">
+                <div class="caption small-10 columns">Jonathan Karr</div>
+                <div class="buttons small-2  columns show-for-medium-up"><a href="{% get_static_prefix %}/photos/headshot-karr-2014-2.jpg"><i class="fi-download" title="Download"></i></a></div>
+            </div>
+  	 	  </div>
+        <div class="photo small-3 columns">
+  			   <img src="{% get_static_prefix %}/photos/headshot-karr-2014-3.thumb-223x223.jpg" />
+           <div class="row info">
+               <div class="caption small-10 columns">Jonathan Karr</div>
+               <div class="buttons small-2  columns show-for-medium-up"><a href="{% get_static_prefix %}/photos/headshot-karr-2014-3.jpg"><i class="fi-download" title="Download"></i></a></div>
+           </div>
+  		  </div>
+    </div>
+    <div class="row">		
+        <div class="photo small-3 columns">
+  		      <img src="{% get_static_prefix %}/photos/headshot-karr-2014-4.thumb-223x223.jpg" />
+            <div class="row info">
+                <div class="caption small-10 columns">Jonathan Karr</div>
+                <div class="buttons small-2  columns show-for-medium-up"><a href="{% get_static_prefix %}/photos/headshot-karr-2014-4.jpg"><i class="fi-download" title="Download"></i></a></div>
+            </div>
+  		  </div>
+  		  <div class="photo small-3 columns"></div>
+            <div class="photo small-3 columns"></div>
+            <div class="photo small-3 columns"></div>
+  	   </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block head_title %}{{ block.super }} :: Funding{% endblock %}
+
+{% block content %}
+
+<div class="funding">
+  <h3>Funding</h3>
+  <ul>
+    <li>2016-2019: NSF Integrated NSF Support Promoting Interdisciplinary Research and Education (INSPIRE) Award
+      <a href="https://www.nsf.gov/pubs/2016/nsf16023/nsf16023.jsp"><i class="fi-link" title="NSF"></i></a>
+      </li>
+    <li>2016-2021: NIH/NIGMS Maximizing Investigators' Research Award
+      <a href="https://www.nigms.nih.gov/research/mechanisms/MIRA/pages/default.aspx"><i class="fi-link" title="NIGMS"></i></a>
+      </li>
+    <li>2016: NIH/NIGMS Support for Conferences and Scientific Meetings
+        <a href="https://grants.nih.gov/grants/funding/r13/index.htm"><i class="fi-link" title="NIGMS"></i></a>
+        </li>
+    <li>2016: NSF Investigator-initiated research projects supplement
+        <a href="https://www.nsf.gov/pubs/2013/nsf13510/nsf13510.htm"><i class="fi-link" title="NSF"></i></a>
+        </li>
+    <li>2015-2018: ERASynBio / National Science Foundation
+      <a href="https://www.erasynbio.eu/joint-calls/2nd-call"><i class="fi-link" title="ERASynBio"></i></a>
+      </li>
+    <li>2014-2015: James S. McDonnel Foundation Postdoctoral Fellowship Award in Studying Complex Systems
+      <a href="https://www.jsmf.org/apply/fellowship/"><i class="fi-link" title="JSMF"></i></a>
+      </li>
+    <li>2013-present: Icahn Institute for Genomic &amp; Multiscale Biology
+      <a href="http://icahn.mssm.edu/research/genomics"><i class="fi-link" title="Icahn Institute"></i></a>
+      </li>
+    <li>2011-2013: National Science Foundation Graduate Fellowship
+      <a href="https://www.nsfgrfp.org/"><i class="fi-link" title="NSF GFRP"></i></a>
+      </li>
+    <li>2008-2011: National Defense Science and Engineering Graduate Fellowship
+      <a href="https://ndseg.asee.org/"><i class="fi-link" title="NDSEG  "></i></a>
+      </li>
+    <li>2006-2011: Stanford Graduate Fellowship
+      <a href="https://vpge.stanford.edu/fellowships-funding/sgf"><i class="fi-link" title="NDSEG  "></i></a>
+      </li>
+  </ul>
+
+  <div class="logos">
+      <a href="https://www.nih.gov">
+        <img src="{% get_static_prefix %}/img/funding/nih.thumb.png" />
+      </a>
+      <a href="https://www.nigms.nih.gov">
+        <img src="{% get_static_prefix %}/img/funding/nigms.thumb.png" />
+      </a>
+      <a href="http://www.nsf.gov">
+        <img src="{% get_static_prefix %}/img/funding/nsf.thumb.png" />
+      </a>
+      <a href="http://www.erasynbio.eu" >
+        <img src="{% get_static_prefix %}/img/funding/erasynbio.thumb.png" />
+      </a>
+      <a href="http://www.jsmf.org" >
+        <img src="{% get_static_prefix %}/img/funding/jsmf.thumb.png" />
+      </a>
+      <a href="http://icahn.mssm.edu/research/genomics" >
+        <img src="{% get_static_prefix %}/img/funding/sinai.thumb.png" />
+      </a>
+      <!--
+      <a href="http://www.nsfgrfp.org/" >
+        <img src="{% get_static_prefix %}/img/funding/nsf-grfp.thumb.png" />
+      </a>
+      <a href="http://www.dod.gov" >
+        <img src="{% get_static_prefix %}/img/funding/dod.thumb.png" />
+      </a>
+      <a href="http://www.asee.org" >
+        <img src="{% get_static_prefix %}/img/funding/asee.thumb.png" />
+      </a>
+      <a href="https://vpge.stanford.edu/fellowships-funding/sgf" >
+        <img src="{% get_static_prefix %}/img/funding/sgf.thumb.png" />
+      </a>
+    -->
+  </div>
+</div>
+
+
+{% endblock %}

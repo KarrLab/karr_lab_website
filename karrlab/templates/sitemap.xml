@@ -13,7 +13,8 @@
     <!-- publications -->
     <url><loc>{{ ROOT_URL }}{% url publications %}</loc></url>
 
-    <!-- press -->
+    <!-- news and press -->
+    <url><loc>{{ ROOT_URL }}{% url news %}</loc></url>
     <url><loc>{{ ROOT_URL }}{% url press %}</loc></url>
 
     <!-- funding -->
@@ -29,6 +30,9 @@
 
     <!-- jobs -->
     <url><loc>{{ ROOT_URL }}{% url join %}</loc></url>
+    <url><loc>{{ ROOT_URL }}{% url join20170316PostdoctoralFellow %}</loc></url>
+    <url><loc>{{ ROOT_URL }}{% url join20170316SoftwareEngineer %}</loc></url>
+    <url><loc>{{ ROOT_URL }}{% url join20170316StudentResearchAssistant %}</loc></url>
     {% comment %}
     <url><loc>{{ ROOT_URL }}{% url join20160622PostdoctoralFellowBacteria %}</loc></url>
     <url><loc>{{ ROOT_URL }}{% url join20160622PostdoctoralFellowHuman %}</loc></url>

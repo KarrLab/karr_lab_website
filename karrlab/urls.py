@@ -15,6 +15,7 @@ urlpatterns = patterns('karrlab.views',
 
     url(r'^publications/*$',                    'publications',                name='publications'),
 
+    url(r'^news/*$',                            'news',                        name='news'),
     url(r'^press/*$',                           'press',                       name='press'),
 
     url(r'^funding/*$',                         'funding',                     name='funding'),
@@ -25,6 +26,9 @@ urlpatterns = patterns('karrlab.views',
     url(r'^people/karr/photos/*$',              'peopleKarrPhotos',            name='peopleKarrPhotos'),
 
     url(r'^join/*$',                            'join',                         name='join'),
+    url(r'^join/2017-03-16-Postdoctoral-Fellow/*$', 'join20170316PostdoctoralFellow', name='join20170316PostdoctoralFellow'),
+    url(r'^join/2017-03-16-Software-Engineer/*$', 'join20170316SoftwareEngineer', name='join20170316SoftwareEngineer'),
+    url(r'^join/2017-03-16-Student-Research-Assistant/*$', 'join20170316StudentResearchAssistant', name='join20170316StudentResearchAssistant'),    
     url(r'^join/2016-06-22-Postdoctoral-Fellow-Bacteria/*$', 'join20160622PostdoctoralFellowBacteria', name='join20160622PostdoctoralFellowBacteria'),
     url(r'^join/2016-06-22-Postdoctoral-Fellow-Human/*$',    'join20160622PostdoctoralFellowHuman',    name='join20160622PostdoctoralFellowHuman'),
     url(r'^join/2016-06-22-Postdoctoral-Fellow-Methods/*$',  'join20160622PostdoctoralFellowMethods',  name='join20160622PostdoctoralFellowMethods'),

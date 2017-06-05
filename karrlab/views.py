@@ -24,6 +24,9 @@ def resourcesGradFellowships(request):
 
 def publications(request):
     return render_template('publications.html', request, data = {'section': 'publications'})
+    
+def news(request):
+    return render_template('news.html', request, data = {'section': 'news'})
 
 def press(request):
     return render_template('press.html', request, data = {'section': 'press'})
@@ -45,6 +48,15 @@ def peopleKarrPhotos(request):
 
 def join(request):
     return render_template('join.html', request, data = {'section': 'join'})
+    
+def join20170316PostdoctoralFellow(request):
+    return render_template('join/2017-03-16-Postdoctoral-Fellow.html', request, data = {'section': 'join'})
+    
+def join20170316SoftwareEngineer(request):
+    return render_template('join/2017-03-16-Software-Engineer.html', request, data = {'section': 'join'})
+    
+def join20170316StudentResearchAssistant(request):
+    return render_template('join/2017-03-16-Student-Research-Assistant.html', request, data = {'section': 'join'})
 
 def join20160622PostdoctoralFellowBacteria(request):
     return render_template('join/2016-06-22-Postdoctoral-Fellow-Bacteria.html', request, data = {'section': 'join'})

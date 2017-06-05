@@ -50,6 +50,7 @@ Created: 2015-04-28
                         <li><a href="{% url research %}">Research</a></li>
                         <li><a href="{% url resources %}">Resources</a></li>
                         <li><a href="{% url publications %}">Publications</a></li>
+                        <li><a href="{% url news %}">News</a></li>
                         <li><a href="{% url press %}">Press</a></li>
                         <li><a href="{% url funding %}">Funding</a></li>
                         <li><a href="{% url people %}">People</a></li>
@@ -69,6 +70,7 @@ Created: 2015-04-28
                                 <dd{% if section == "research" %} class="active"{% endif %}><a href="{% url research %}">Research</a></dd>
                                 <dd{% if section == "resources" %} class="active"{% endif %}><a href="{% url resources %}">Resources</a></dd>
                                 <dd{% if section == "publications" %} class="active"{% endif %}><a href="{% url publications %}">Publications</a></dd>
+                                <dd{% if section == "news" %} class="active"{% endif %}><a href="{% url news %}">News</a></dd>
                                 <dd{% if section == "press" %} class="active"{% endif %}><a href="{% url press %}">Press</a></dd>
                                 <dd{% if section == "funding" %} class="active"{% endif %}><a href="{% url funding %}">Funding</a></dd>
                                 <dd{% if section == "people" %} class="active"{% endif %}><a href="{% url people %}">People</a></dd>

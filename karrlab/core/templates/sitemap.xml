@@ -1,0 +1,54 @@
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <!-- index -->
+    <url><loc>{{ ROOT_URL }}{% url 'index' %}</loc></url>
+
+    <!-- research -->
+    <url><loc>{{ ROOT_URL }}{% url 'research' %}</loc></url>
+
+    <!-- resources -->
+    <url><loc>{{ ROOT_URL }}{% url 'resources' %}</loc></url>
+    <url><loc>{{ ROOT_URL }}{% url 'graphics' %}</loc></url>
+    <url><loc>{{ ROOT_URL }}{% url 'resourcesGradFellowships' %}</loc></url>
+
+    <!-- publications -->
+    <url><loc>{{ ROOT_URL }}{% url 'publications' %}</loc></url>
+	<url><loc>{{ ROOT_URL }}{% url 'video' %}</loc></url>
+
+    <!-- news and press -->
+    <url><loc>{{ ROOT_URL }}{% url 'news' %}</loc></url>
+    <url><loc>{{ ROOT_URL }}{% url 'press' %}</loc></url>
+
+    <!-- funding -->
+    <url><loc>{{ ROOT_URL }}{% url 'funding' %}</loc></url>
+
+    <!-- people -->
+    <url><loc>{{ ROOT_URL }}{% url 'people' %}</loc></url>
+    <url><loc>{{ ROOT_URL }}{% url 'alumni' %}</loc></url>
+    <url><loc>{{ ROOT_URL }}{% url 'peopleKarrCv' %}</loc></url>
+    <url><loc>{{ ROOT_URL }}{% url 'peopleKarrPhotos' %}</loc></url>
+
+    <!-- jobs -->
+    <url><loc>{{ ROOT_URL }}{% url 'join' %}</loc></url>
+    <url><loc>{{ ROOT_URL }}{% url 'join20171002Scientist' %}</loc></url>
+    <url><loc>{{ ROOT_URL }}{% url 'join20171002Engineer' %}</loc></url>
+    <url><loc>{{ ROOT_URL }}{% url 'join20171002Undergrad' %}</loc></url>
+    {% comment %}
+    <url><loc>{{ ROOT_URL }}{% url 'join20170812Scientist' %}</loc></url>
+    <url><loc>{{ ROOT_URL }}{% url 'join20170316PostdoctoralFellow' %}</loc></url>
+    <url><loc>{{ ROOT_URL }}{% url 'join20170316SoftwareEngineer' %}</loc></url>
+    <url><loc>{{ ROOT_URL }}{% url 'join20170316StudentResearchAssistant' %}</loc></url>    
+    <url><loc>{{ ROOT_URL }}{% url 'join20160622PostdoctoralFellowBacteria' %}</loc></url>
+    <url><loc>{{ ROOT_URL }}{% url 'join20160622PostdoctoralFellowHuman' %}</loc></url>
+    <url><loc>{{ ROOT_URL }}{% url 'join20160622PostdoctoralFellowMethods' %}</loc></url>
+    <url><loc>{{ ROOT_URL }}{% url 'join20160622PostdoctoralFellowGenomics' %}</loc></url>
+    <url><loc>{{ ROOT_URL }}{% url 'join20150317ScientistBacteria' %}</loc></url>
+    <url><loc>{{ ROOT_URL }}{% url 'join20150317ScientistHuman' %}</loc></url>
+    <url><loc>{{ ROOT_URL }}{% url 'join20150317Engineer' %}</loc></url>
+    {% endcomment %}
+
+    <!-- contact -->
+    <url><loc>{{ ROOT_URL }}{% url 'contact' %}</loc></url>
+	
+	<!-- survey -->
+    <url><loc>{{ ROOT_URL }}{% url 'survey' %}</loc></url>
+</urlset>

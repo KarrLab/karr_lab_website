@@ -1,0 +1,30 @@
+{% extends "joinJob.html" %}
+
+{% load static %}
+
+{% block head_title %}{{ block.super }} :: Join us :: Postdoctoral Fellow, Software Engineer, or PhD student in online simulation and visualization{% endblock %}
+{% block page_title %}Postdoctoral Fellow, Software Engineer, or PhD student in online simulation and visualization{% endblock %}
+{% block page_pdf %}<a href="{% get_static_prefix %}/doc/jobs/2017-10-02-Engineer.pdf"><i class="fi-print" title="PDF"></i></a>{% endblock %}
+
+{% block job_details %}
+<div class="area">
+	<h4>Responsibilities</h4>
+  <p>To help enable whole-cell models, the candidate will help develop new tools for simulating models and visualizing simulation results online. This will include developing a universal systems biology simulator that is capable of executing a wide range of simulations including steady-state, logical, deterministic kinetic, stochastic kinetic, and spatial simulations; a repository for simulation results; a system for large-scale analysis of simulation results; and tools for visually analyzing simulation results in the context of biologically intuitive diagrams. Importantly, all of these tools will be web-based to enable researchers to collaboratively build and simulate models, as well as to enable journal reviewers and readers to simulate reported models. The candidate will work with our team at Mount Sinai, as well as with our collaborators at the University of Washington (Herbert Sauro <a href="http://sys-bio.org"><i class="fi-link"></i></a> and John Gennari <a href="http://faculty.washington.edu/gennari/"><i class="fi-link"></i></a>), the University of Connecticut Health Center (Ion Moraru <a href="http://facultydirectory.uchc.edu/profile?profileId=Moraru-Ion"><i class="fi-link"></i></a>, Jim Schaff <a href="http://facultydirectory.uchc.edu/profile?profileId=Schaff-James"><i class="fi-link"></i></a>, and Michael Blinov <a href="http://apache.cam.uchc.edu/mblinov/"><i class="fi-link"></i></a>), and the University of Auckland (David Nickerson <a href="https://unidirectory.auckland.ac.nz/profile/dnic019"><i class="fi-link"></i></a>) and our partner journals. The candidate would also have many opportunities to work with our team to build and analyze models.
+</div>
+
+<div class="area">
+	<h4>Desired skills/experience</h4>
+  <p>Whole-cell modeling is a highly interdisciplinary problem. Consequently, we're looking for team members with a broad range of skills and experience. The ideal candidate has the following skills. Applicants with related experience are also encouraged to apply.
+  <ul class="inpara">
+        <li>BS, MS, or PhD in computer science, applied math, or a related field;</li>
+        <li>Strong experience in modeling, software engineering, and/or visualization;</li>
+        <li>Deep commitment to innovation and desire to tackle the most challenging problems;</li>
+        <li>Abilities to solve challenging problems by thinking creatively, integrating diverse concepts, and pushing through barriers;</li>
+        <li>Passion for transforming bioengineering and medicine;</li>
+        <li>Excellent oral and written communication skills; and</li>
+        <li>Abilities to work independently and within a team.</li>
+    </ul>
+  </p>
+</div>
+
+{% endblock %}

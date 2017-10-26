@@ -38,7 +38,7 @@
     		</div>
         <div class="links">
             <a href="https://www.synapse.org/#!Synapse:syn1876068"><i class="fi-link" title="Project website"></i></a>
-            <a href="{% url press %}#DREAM8"><i class="fi-burst" title="News"></i></a>
+            <a href="{% url 'press' %}#DREAM8"><i class="fi-burst" title="News"></i></a>
             <a href="http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004096"><i class="fi-page-doc" title="HTML"></i></a>
             <a href="{% get_static_prefix %}/doc/papers/Karr2015b.pdf"><i class="fi-print" title="PDF"></i></a>
         </div>
@@ -118,7 +118,7 @@
 			<a href="http://www.sciencedirect.com/science/article/pii/S0092867412007763"><i class="fi-page-doc" title="HTML"></i><a>
 			<a href="{% get_static_prefix %}/doc/papers/Karr2012.pdf"><i class="fi-print" title="PDF"></i></a>
 			<a href="https://simtk.org/project/xml/downloads.xml?group_id=714#package_id1169"><i class="fi-download" title="Software"></i></a>
-			<a href="{% url press %}#whole-cell"><i class="fi-burst" title="News"></i></a>
+			<a href="{% url 'press' %}#whole-cell"><i class="fi-burst" title="News"></i></a>
 		</div>
 	</li>
 	<li class="pub">
@@ -178,6 +178,26 @@
 <ol>
   <li class="pub">
       <div class="cite">
+        <b>Goldberg AP<sup>*</sup></b>, <b>Szigeti B<sup>*</sup></b>, <b>Chew YH<sup>*</sup></b>, <b>Sekar JAP<sup>*</sup></b>, <b>Roth YD</b> &amp; <b>Karr JR</b>. Emerging whole-cell modeling principles and methods. <i>Curr Opin Syst Biol</i> (In review). 
+      </div>
+      <div class="links">
+        <a href="https://arxiv.org/abs/1710.02431"><i class="fi-page-doc" title="HTML"></i><a>
+	    <a href="{% get_static_prefix %}/doc/papers/Goldberg2018.pdf"><i class="fi-print" title="PDF"></i></a>
+      </div>
+  </li>
+  
+  <li class="pub">
+      <div class="cite">
+        <b>Szigeti B</b>, <b>Roth YD</b>, <b>Sekar JAP</b>, <b>Goldberg AP</b>, <b>Pochiraju SC</b> &amp; <b>Karr JR</b>. A blueprint for human whole-cell modeling. <i>Curr Opin Biotechnol</i> (In review). 
+      </div>
+      <div class="links">
+        <a href="https://doi.org/10.1101/198044"><i class="fi-page-doc" title="HTML"></i><a>
+	    <a href="{% get_static_prefix %}/doc/papers/Szigeti2018.pdf"><i class="fi-print" title="PDF"></i></a>
+      </div>
+  </li>
+  
+  <li class="pub">
+      <div class="cite">
         Medley JK, <b>Goldberg AP</b> &amp; <b>Karr JR</b>. Guidelines for reproducibly building and simulating systems biology models. <i>IEEE Trans Biomed Eng</i> <b>63</b>, 2015&ndash;2020 (2016). 
       </div>
       <div class="links">
@@ -193,7 +213,7 @@
       <div class="links">
         <a href="https://sites.google.com/site/vwwholecellsummerschool"><i class="fi-link" title="Summer school website"></i></a>
         <a href="http://ieeexplore.ieee.org/document/7489010/"><i class="fi-page-doc" title="HTML"></i><a>
-	      <a href="{% get_static_prefix %}/doc/papers/Waltemath2016.pdf"><i class="fi-print" title="PDF"></i></a>
+	    <a href="{% get_static_prefix %}/doc/papers/Waltemath2016.pdf"><i class="fi-print" title="PDF"></i></a>
       </div>
   </li>
 
@@ -216,10 +236,22 @@
 <ol>
   <li class="pub">
       <div class="cite">
-          <b>Karr JR</b>, Lluch-Senar M, Serrano L &amp; Carrera J. Summary of the 2016 whole-cell modeling summer school (2016).
+          <b>Karr JR</b>, Lluch-Senar M, Serrano L &amp; Kastelic D. The 2017 Whole-Cell Modeling Summer School (2017).
+      </div>
+      <div class="links">
+        <a href="http://www.wholecell.org/school-2017"><i class=fi-link></i></a>
+		<a href="http://doi.org/10.5281/zenodo.1004135"><i class="fi-page-doc" title="HTML"></i><a>
+        <a href="{% get_static_prefix %}/doc/papers/Karr2017.pdf"><i class="fi-print" title="PDF"></i></a>
+      </div>
+  </li>
+  
+  <li class="pub">
+      <div class="cite">
+          <b>Karr JR</b>, Lluch-Senar M, Serrano L &amp; Carrera J. The 2016 Whole-Cell Modeling Summer School (2016).
       </div>
       <div class="links">
         <a href="http://www.wholecell.org/school-2016"><i class=fi-link></i></a>
+		<a href="http://doi.org/10.5281/zenodo.1004027"><i class="fi-page-doc" title="HTML"></i><a>
         <a href="{% get_static_prefix %}/doc/papers/Karr2016.pdf"><i class="fi-print" title="PDF"></i></a>
       </div>
   </li>

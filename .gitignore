@@ -3,3 +3,6 @@
 
 # log
 karrlab/log/
+
+#temporary files
+tmp/

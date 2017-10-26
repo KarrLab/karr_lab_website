@@ -1,11 +1,18 @@
+""" WSGI configuration
+:Author: Jonathan Karr <karr@mssm.edu>
+:Date: 2017-10-25
+:Copyright: 2017, Karr Lab
+:License: MIT
+"""
+
 import sys, os
-sys.path.append(os.getcwd())
-os.environ['DJANGO_SETTINGS_MODULE'] = "karrlab.settings"
-import django.core.handlers.wsgi
-application = django.core.handlers.wsgi.WSGIHandler()
 
-from karrlab import monitor
-monitor.start(interval = 1.0)
+# Use custom version of python
+INTERP = "/home/jonkar26/opt/python-3.6.3/bin/python3"
+if os.path.isfile(INTERP) and sys.executable != INTERP:	
+    os.execl(INTERP, INTERP, *sys.argv)    
 
-#from paste.exceptions.errormiddleware import ErrorMiddleware
-#application = ErrorMiddleware(_application, debug=True)
+# Instantiate application
+from django.core.wsgi import get_wsgi_application
+os.environ["DJANGO_SETTINGS_MODULE"] = "karrlab.site.settings"
+application = get_wsgi_application()

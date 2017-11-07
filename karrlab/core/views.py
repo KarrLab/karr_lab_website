@@ -142,6 +142,7 @@ def render_template(request, template, context=None, content_type='text/html'):
     #add data
     context['request'] = request
     context['last_updated_date'] = datetime.fromtimestamp(os.path.getmtime(os.path.join(settings.TEMPLATES[0]['DIRS'][0], template)))
+    context['year'] = datetime.now().year
 
     #render
     return render(request, template, context=context, content_type=content_type)

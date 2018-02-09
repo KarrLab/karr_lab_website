@@ -31,7 +31,8 @@ urlpatterns = [
     url(r'^people/karr/photos/*$',              views.peopleKarrPhotos,            name='peopleKarrPhotos'),
 
     url(r'^join/*$',                            views.join,                         name='join'),
-	url(r'^join/2017-10-02-Scientist/*$', views.join20171002Scientist, name='join20171002Scientist'),
+	url(r'^join/2018-02-04-Student-Summer-Research-Assistant/*$', views.join20180204StudentSummerResearchAssistant, name='join20180204StudentSummerResearchAssistant'),
+    url(r'^join/2017-10-02-Scientist/*$', views.join20171002Scientist, name='join20171002Scientist'),
 	url(r'^join/2017-10-02-Engineer/*$', views.join20171002Engineer, name='join20171002Engineer'),
 	url(r'^join/2017-10-02-Undergrad/*$', views.join20171002Undergrad, name='join20171002Undergrad'),	
     url(r'^join/2017-03-16-Postdoctoral-Fellow/*$', views.join20170316PostdoctoralFellow, name='join20170316PostdoctoralFellow'),

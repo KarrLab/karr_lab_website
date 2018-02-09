@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block head_title %}{{ block.super }} :: Join us :: Undergraduate or Master Summer Research Assistant{% endblock %}
+
+{% block content %}
+<h3>Undergraduate or Master Summer Research Assistant <a href="{% get_static_prefix %}/doc/jobs/2018-02-04-Student-Summer-Research-Assistant.pdf"><i class="fi-print" title="PDF"></i></a></h3>
+
+<div class="area">
+  	<h4>About the Karr Lab</h4>
+  	<p>Despite the explosion of experimental data, we do not understand the details of how phenotype arises from genotype and the environment. We are developing whole-cell computational models which comprehensively predict how cell behavior emerges from the molecular level by representing all of the biochemical activity inside cells. Our goal is to use whole-cell models to transform bioengineering and medicine into rigorous, quantitative disciplines. For example, we believe that whole-cell models could enable bioengineers to design microbial genomes for a variety of industrial applications, as well as enable physicians to tailor medical therapy to individual patients. Our research is highly interdisciplinary, involving systems biology, genomics, bioinformatics, data integration, parallel simulation, optimization, software engineering, and data visualization, and highly team-oriented.</p>
+</div>
+
+<div class="area">
+  	<h4>About the Institute for Genomics &amp; Multiscale Biology and the Icahn School of Medicine at Mount Sinai</h4>
+  	<p>The Icahn Institute for Genomics &amp; Multiscale Biology is a leader in basic and translational genomic and computational biology research. The institute's multidisciplinary researchers bring state-of-the-art genomic technologies together with advanced computational analyses to discover new disease mechanisms, develop new diagnostics, and identify new drug targets. The institute is a highly collaborative and interdisciplinary environment. Please see the institute's website <a href="http://icahn.mssm.edu/research/genomics"><i class="fi-link"></i></a> for more information.</p>
+
+    <p>The Icahn School of Medicine at Mount Sinai is a world leader in translational medicine. The school's multidisciplinary research institutes foster collaboration along a seamless continuum from the laboratory to patient care. State-of-the-art laboratories support groundbreaking research, and abundant clinical venues offer superb patient care and training.</p>
+</div>
+
+<div class="area">
+	<h4>Responsibilities</h4>
+	<p>The student will help develop a random whole-cell model generator. This will include aggregating and organizing data; designing, testing, and calibrating models; and developing software tools to enable researchers to build more comprehensive and more predictive models. The student will also have opportunities to participate in group meetings and attend seminars. The candidate will work closely with Prof. Karr and our postdoctoral fellows.</p>
+</div>
+
+<div class="area">
+	<h4>Desired skills/experience</h4>
+	<p>Whole-cell modeling is a highly interdisciplinary problem. Consequently, we're looking for team members with a broad range of skills. The ideal candidate has the following skills. Students with related experience are also encouraged to contact Jonathan.
+		<ul class="inpara">
+			<li>Majoring in systems biology, computational biology, bioinformatics or a related field;</li>
+			<li>Strong interest in computational modeling;</li>
+			<li>Broad knowledge of biology and computer programming; and</li>
+			<li>Abilities to solve challenging problems.</li>
+		</ul>
+    </p>
+</div>
+
+<div class="area">
+	<h4>Dates and duration</h4>
+	<p>The internship will be full-time for 10 weeks. The start and end dates are flexible. The internship can also be extended into the academic year.<p>
+</div>
+
+<div class="area">
+	<h4>Stipend</h4>
+ 	<p>The stipend for the 10-week internship is $6,000.<p>
+</div>
+
+<div class="area">
+	<h4>Housing</h4>
+ 	<p>Unfortunately, we are not able to offer housing.<p>
+</div>
+
+<div class="area">
+	<h4>How to apply</h4>
+	<p>Please email Jonathan <a href="{% url 'contact' %}"><i class="fi-mail"></i></a> a brief description of your interests and your CV by February 23, 2018.</p>
+	<p>Mount Sinai Medical Center is an equal opportunity/affirmative action employer.</p>
+</div>
+
+<div class="area">
+	<h4>More information</h4>
+	<p>Please contact Jonathan Karr <a href="{% url 'contact' %}"><i class="fi-mail"></i></a>.</p>
+</div>
+{% endblock %}

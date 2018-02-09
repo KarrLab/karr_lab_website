@@ -60,6 +60,9 @@ def peopleKarrPhotos(request):
 def join(request):
     return render_template(request, 'join.html', context={'section': 'join'})
 
+def join20180204StudentSummerResearchAssistant(request):
+    return render_template(request, 'join/2018-02-04-Student-Summer-Research-Assistant.html', context={'section': 'join'})
+    
 def join20171002Scientist(request):
     return render_template(request, 'join/2017-10-02-Scientist.html', context={'section': 'join'})
 

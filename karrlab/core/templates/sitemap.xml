@@ -33,6 +33,7 @@
     <url><loc>{{ ROOT_URL }}{% url 'join20171002Engineer' %}</loc></url>
     <url><loc>{{ ROOT_URL }}{% url 'join20171002Undergrad' %}</loc></url>
     {% comment %}
+    <url><loc>{{ ROOT_URL }}{% url 'join20180204StudentSummerResearchAssistant' %}</loc></url>
     <url><loc>{{ ROOT_URL }}{% url 'join20170812Scientist' %}</loc></url>
     <url><loc>{{ ROOT_URL }}{% url 'join20170316PostdoctoralFellow' %}</loc></url>
     <url><loc>{{ ROOT_URL }}{% url 'join20170316SoftwareEngineer' %}</loc></url>

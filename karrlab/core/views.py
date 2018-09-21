@@ -59,7 +59,17 @@ def peopleKarrPhotos(request):
 
 def join(request):
     return render_template(request, 'join.html', context={'section': 'join'})
+    
+def join20180726Scientist(request):
+    return render_template(request, 'join/2018-07-26-Scientist.html', context={'section': 'join'})
 
+def join20180726Engineer(request):
+    return render_template(request, 'join/2018-07-26-Engineer.html', context={'section': 'join'})
+
+def join20180726Undergrad(request):
+    return render_template(request, 'join/2018-07-26-Undergrad.html', context={'section': 'join'})
+
+"""
 def join20180204StudentSummerResearchAssistant(request):
     return render_template(request, 'join/2018-02-04-Student-Summer-Research-Assistant.html', context={'section': 'join'})
     
@@ -104,6 +114,7 @@ def join20150317ScientistHuman(request):
 
 def join20150317Engineer(request):
     return render_template(request, 'join/2015-03-17-Engineer.html', context={'section': 'join'})
+"""
 
 def contact(request):
     return render_template(request, 'contact.html', context={'section': 'contact'})
@@ -148,4 +159,6 @@ def render_template(request, template, context=None, content_type='text/html'):
     context['year'] = datetime.now().year
 
     #render
-    return render(request, template, context=context, content_type=content_type)
+    response = render(request, template, context=context, content_type=content_type)
+    response['Cache-Control'] = 'public, max-age=0'
+    return response

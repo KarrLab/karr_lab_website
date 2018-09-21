@@ -1,0 +1,44 @@
+{% extends "joinJob.html" %}
+
+{% load static %}
+
+{% block head_title %}{{ block.super }} :: Join us :: Postdoctoral Fellows, Software Engineers, or PhD students in data integration, online simulation, and visualization{% endblock %}
+{% block page_title %}Postdoctoral Fellows, Software Engineers, or PhD students in data integration, online simulation, and/or visualization{% endblock %}
+{% block page_pdf %}<a href="{% get_static_prefix %}/doc/jobs/2018-07-26-Engineer.pdf"><i class="fi-print" title="PDF"></i></a>{% endblock %}
+
+{% block job_details %}
+<div class="area">
+	<h4>Responsibilities</h4>
+    <p>To help enable whole-cell models, the scientists/engineers will develop new tools for systematically, scalably, and collaboratively building, simulating, and analyzing models of individual cells. In addition to accelerating cell modeling, these tools will help journal reviewers and readers explore reported models. Examples of tools that the scientists/engineers would develop include 
+        <ul>
+            <li>An integrated database of biochemical and genomic data for cell modeling;</li>
+            <li>Tools for discoverying relevant data for modeling specific organisms and environmental conditions;</li>
+            <li>A framework for scalably designing models from large datasets;</li>
+            <li>A simulation web service that can simulate any cell model including steady-state, logical, deterministic, stochastic, and spatial models;</li>
+            <li>A database for simulation results;</li>
+            <li>Tools for mining large-scale simulation results; and</li>
+            <li>Web-based tools for interactively analyzing models of simulation results.</li>
+        </ul>
+    </p>
+    
+    <p>The scientists/engineers will be part of the new NIH-funded Center for Reproducible Biomedical Modeling <a href="http://reproduciblebiomodels.org"><i class="fi-link"></i></a> which aims to develop a platform for systematically building and simulating models of cells. The center is a collaboration with Herbert Sauro <a href="http://sys-bio.org"><i class="fi-link"></i></a> and John Gennari <a href="http://faculty.washington.edu/gennari/"><i class="fi-link"></i></a> at the University of Washington, Ion Moraru <a href="http://facultydirectory.uchc.edu/profile?profileId=Moraru-Ion"><i class="fi-link"></i></a> and Michael Blinov <a href="http://apache.cam.uchc.edu/mblinov/"><i class="fi-link"></i></a> at the University of Connecticut Health Center, and David Nickerson <a href="https://unidirectory.auckland.ac.nz/profile/dnic019"><i class="fi-link"></i></a> at the University of Auckland. The scientists/engineers would have opportunities to work with our collaborators, as well as work with our team to build and analyze models.</p>
+</div>
+
+<div class="area">
+	<h4>Desired skills/experience</h4>
+    <p>Whole-cell modeling is highly interdisciplinary. Consequently, we're looking for team members with a broad range of relevant skills and experience.
+        <ul class="inpara">                        
+            <li>Passion for transforming bioengineering and medicine through modeling;</li>
+            <li>Desire to tackle challenging problems;</li>
+            <li>Commitment to innovation;</li>
+            <li>Abilities to think creatively, integrate diverse concepts, and push past barriers;</li>
+            <li>Knowledge of molecular cell biology;</li>
+            <li>Experience in software engineering;</li>
+            <li>Excellent oral and written communication skills;</li>
+            <li>Abilities to work independently and within a team; and</li>
+            <li>BS, MS, or PhD in computer science, applied math, or a related field.</li>
+        </ul>
+    </p>
+</div>
+
+{% endblock %}

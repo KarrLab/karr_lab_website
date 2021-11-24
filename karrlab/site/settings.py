@@ -11,6 +11,7 @@ import os
 
 BASE_DOMAIN = 'karrlab.org'
 BASE_URL = 'http://' + BASE_DOMAIN
+ROOT_DOMAIN = BASE_DOMAIN
 ROOT_URL = BASE_URL
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)

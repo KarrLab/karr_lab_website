@@ -5,65 +5,60 @@
 {% block head_title %}{{ block.super }} :: Resources{% endblock %}
 
 {% block content %}
-<h3>Software</h3>
+<h3>Models, Data and Tools</h3>
 
-<div>
-	<p>Please use the links below to use the free, hosted versions of our software and download source code.</p>
-	<p>In addition to the software packages listed here, we have also developed several utility libraries. These can be obtained from our <a href="https://www.mathworks.com/matlabcentral/profile/authors/1500538-jonathan-karr">MATLABCentral page</a>.</p>
+<div>      
+	<p>All of our models, data and tools are freely available open-source with detailed tutorials, examples, and documentation via the links below.</p>	
 </div>
 
 <div class="block">
 	<div class="block-head">
-			<b>Whole-cell</b>
-			<a href="https://www.wholecell.org"><i class="fi-link" title="Use hosted version"></i></a>
-			<a href="https://simtk.org/home/wholecell"><i class="fi-download" title="Download software"></i></a>
+        <b>Second generation whole-cell models and whole-cell modeling tools</b>
 	</div>
 	<div class="block-body">
-		<p>The first "whole-cell" model of the bacterium <i>M. genitalium</i>. Provides all MATLAB simulation code, training data, detailed results, and MATLAB code for analysis of whole-cell simulations. Also provides an interactive web-based interface to the training data.</p>
+        <ul>
+            <li>For users
+                <ul>
+                <li>Model and tools <a href="https://code.karrlab.org"><i class="fi-link"></i></a></li>
+                <li>Data <a href="https://data.karrlab.org"><i class="fi-link"></i></a></li>
+                <li>Interactive tutorials <a href="https://sandbox.karrlab.org"><i class="fi-link"></i></a></li>
+                <li>Documentation <a href="https://docs.karrlab.org"><i class="fi-link"></i></a></li>
+                </ul></li>
+            <li>For developers
+                <ul>
+                <li>Source code <a href="https://github.com/karrlab"><i class="fi-link"></i></a></li>
+                <li>Python packages <a href="https://pypi.org/user/karrlab/"><i class="fi-link"></i></a></li>
+                <li>Data packages <a href="https://quiltdata.com/package/karrlab"><i class="fi-link"></i></a></li>
+                <li>Docker images <a href="https://hub.docker.com/u/karrlab"><i class="fi-link"></i></a></li>
+                <li>Builds <a href="https://circleci.com/gh/KarrLab"><i class="fi-link"></i></a></li>
+                <li>Test results <a href="https://tests.karrlab.org"><i class="fi-link"></i></a></li>
+                <li>Test coverage <a href="https://coveralls.io/github/KarrLab"><i class="fi-link"></i></a></li>
+                </ul></li>
+        </ul>
+    </div>
+</div>
+
+<div class="block">
+	<div class="block-head">
+        <b>First generation whole-cell models and whole-cell modeling tools</b>			
+	</div>
+	<div class="block-body">
+        <ul>
+        <li><i>Whole-cell model of <i>Mycoplasma genitalium</i></i> <a href="https://simtk.org/home/wholecell"><i class="fi-download" title="Download software"></i></a><br/>
+        First whole-cell model of the bacterium <i>M. genitalium</i>. Includes MATLAB simulation code, training data, and MATLAB code for analysis of whole-cell simulations.</li>
+        <li><i>WholeCellKB</i> <a href="https://www.wholecellkb.org"><i class="fi-link" title="Use hosted version"></i></a><br/>Web-based software for creating model organism databases for whole-cell models. Implemented in Python using the Django framework.</li>
+        <li><i>WholeCellSimDB</i> <a href="https://www.wholecellsimdb.org"><i class="fi-link" title="Use hosted version"></i></a><br/>Database for storing and retrieving whole-cell simulations. Implemented in Python using the Django framework, h5py, and MySQL. Includes a web-based user interface developed using flot.</li>
+        <li><i>WholeCellViz</i> <a href="https://www.wholecellviz.org"><i class="fi-link" title="Use hosted version"></i></a><br/>Web-based software for exploratory data analysis of whole-cell simulations. Implemented in JavaScript using jQuery, flot, and three.js.</br>
+        </ul>
 	</div>
 </div>
 
 <div class="block">
 	<div class="block-head">
-			<b>WholeCellKB</b>
-			<a href="https://www.wholecellkb.org"><i class="fi-link" title="Use hosted version"></i></a>
-			<a href="https://simtk.org/home/wholecell"><i class="fi-download" title="Download software"></i></a>
+        <b>Integrated models (precursor to whole-cell models)</b>
 	</div>
 	<div class="block-body">
-		<p>Web-based software for creating model organism databases for whole-cell models. Implemented in Python using the Django framework.</p>
-	</div>
-</div>
-
-<div class="block">
-	<div class="block-head">
-			<b>WholeCellSimDB</b>
-			<a href="https://www.wholecellsimdb.org"><i class="fi-link" title="Use hosted version"></i></a>
-			<a href="https://simtk.org/home/wholecell"><i class="fi-download" title="Download software"></i></a>
-	</div>
-	<div class="block-body">
-		<p>Database for storing and retrieving whole-cell simulations. Implemented in Python using the Django framework, h5py, and MySQL. Includes a web-based user interface developed using flot.</p>
-	</div>
-</div>
-
-<div class="block">
-	<div class="block-head">
-			<b>WholeCellViz</b>
-			<a href="https://www.wholecellviz.org"><i class="fi-link" title="Use hosted version"></i></a>
-			<a href="https://simtk.org/home/wholecell"><i class="fi-download" title="Download software"></i></a>
-	</div>
-	<div class="block-body">
-		<p>Web-based software for exploratory data analysis of whole-cell simulations. Implemented in JavaScript using jQuery, flot, and three.js.</p>
-	</div>
-</div>
-
-<div class="block">
-	<div class="block-head">
-			<b>Integrated flux-balance analysis (iFBA)</b>
-				<!--<a href="http://covertlab.stanford.edu/iFBA"><i class="fi-link" title="Use hosted version"></i></a>-->
-				<a href="https://simtk.org/home/ifba"><i class="fi-download" title="Download software"></i></a>
-	</div>
-	<div class="block-body">
-		<p>Provides MATLAB code and results for a  computational model of <i>E. coli</i> which integrates an ordinary differential equation model of central carbon metabolism, a flux-balance analysis model of all of metabolism, and a Boolean model of transcriptional regulation.</p>
+        <i>Integrated flux-balance analysis (iFBA)</i> <a href="https://simtk.org/home/ifba"><i class="fi-download" title="Download software"></i></a><br/>Provides MATLAB code and results for a  computational model of <i>E. coli</i> which integrates an ordinary differential equation model of central carbon metabolism, a flux-balance analysis model of all of metabolism, and a Boolean model of transcriptional regulation.</li>
 	</div>
 </div>
 
@@ -78,70 +73,28 @@
 	</div>
 </div>
 
-<h3 style="margin-top:40px">Courses</h3>
-
 <div class="block">
 	<div class="block-head">
-			<b>Whole-cell modeling summer school, September 2017</b>
-			<a href="https://www.wholecell.org/school-2017"><i class="fi-link" title="Info"></i></a>
+        <b>MATLAB utilities</b>
+        <a href="https://www.mathworks.com/matlabcentral/profile/authors/1500538-jonathan-karr"></i></a>
 	</div>
 	<div class="block-body">
-		<p>4-day summer school on whole-cell modeling featuring didactic lectures and hands-on tutorials with experts in computational and experimental systems biology.</p>
-    <ul>
-      <li>Location: Center for Regulatory Genomics, Barcelona, Spain</li>
-      <li>Date: September 4-7 2017</li>
-      <li>Application deadline: May 2017</li>
-    </ul>
+		<p>Utilities for representing N-dimensional sparse matrices; representing chemical formulae; reading and writing .mat files; differencing .mat files and struct; querying MySQL databases; logging unit test results; and generating coverage reports.</p>
 	</div>
 </div>
 
 
-<div class="block">
-	<div class="block-head">
-			<b>Whole-cell modeling summer school, April 2016</b>
-			<a href="https://www.wholecell.org/school-2016"><i class="fi-link" title="Info"></i></a>
-	</div>
-	<div class="block-body">
-		<p>6-day summer school on whole-cell modeling featuring didactic lectures and hands-on tutorials with experts in computational and experimental systems biology.</p>
-    <ul>
-      <li>Location: Center for Regulatory Genomics, Barcelona, Spain</li>
-      <li>Date: April 3-8 2016</li>
-	  <li>Application deadline: November 2015</li>
-    </ul>
-	</div>
-</div>
+<h3 style="margin-top:40px">Instructional materials</h3>
 
 <div class="block">
 	<div class="block-head">
-			<b>Whole-cell modeling workshop, March 2016</b>
-			<a href="https://cri-paris.org/doctoral-school-fdv/academic-program/fdv-courses/introduction-to-multi-algorithm-whole-cell-modeling/"><i class="fi-link" title="Info"></i></a>
+			<b>WholeCell.org</b>
+			<a href="https://www.wholecell.org"><i class="fi-link" title="Info"></i></a>
 	</div>
 	<div class="block-body">
-		<p>1-day workshop focused on developing standards for whole-cell modeling.</p>
-    <ul>
-      <li>Location: Center for Interdisciplinary Research, Paris, France</li>
-      <li>Date: March 29, 2016</li>
-    </ul>
+		<p>Central hub for information about whole-cell modeling.</p>
 	</div>
 </div>
-
-<div class="block">
-	<div class="block-head">
-			<b>Whole-cell modeling/standards workshop, March 2015</b>
-			<a href="https://sites.google.com/site/vwwholecellsummerschool"><i class="fi-link" title="Info"></i></a>
-	</div>
-	<div class="block-body">
-		<p>5-day summer school focused on evaluating standards for whole-cell modeling.</p>
-    <ul>
-      <li>Location: Rostock, Germany</li>
-      <li>Date: March 9-13, 2015</li>
-			<li>Application deadline: October 31, 2014</li>
-    </ul>
-	</div>
-</div>
-
-
-<h3 style="margin-top:40px">Information</h3>
 
 <div class="block">
 	<div class="block-head">
@@ -155,21 +108,41 @@
 
 <div class="block">
 	<div class="block-head">
-			<b>Whole-cell modeling forum</b>
-			<a href="https://www.wholecell.org/forum/"><i class="fi-link" title="Info"></i></a>
-	</div>
-	<div class="block-body">
-		<p>Forum for whole-cell modeling discussions.</p>
-	</div>
-</div>
-
-<div class="block">
-	<div class="block-head">
 			<b>Graduate fellowships information</b>
 			<a href="{% url 'resourcesGradFellowships' %}"><i class="fi-link" title="Info"></i></a>
 	</div>
 	<div class="block-body">
 		<p>Collection of information about graduate fellowships and sample applications.</p>
+	</div>
+</div>
+
+<h3 style="margin-top:40px">Courses</h3>
+
+<div class="block">
+	<div class="block-head">			
+        <b>2019 Whole-cell modeling summer school</b> <a href="https://www.wholecell.org/get-involved/meeting-2019/"><i class="fi-link" title="Info"></i></a>
+	</div>
+	<div class="block-body">
+		<p>7-day school on whole-cell modeling featuring didactic lectures and hands-on tutorials.</p>
+    <ul>
+      <li>Location: Center for Regulatory Genomics, Barcelona, Spain</li>
+      <li>Date: April 7-13 2019</li>
+    </ul>
+	</div>
+</div>
+
+
+<div class="block">
+	<div class="block-head">
+    <b>Past courses</b>
+	</div>
+	<div class="block-body">
+        <ul>
+        <li>2017 Whole-Cell Modeling Summer School <a href="https://www.wholecell.org/school-2017"><i class="fi-link"></i></a></li>
+        <li>2016 Whole-Cell Modeling Summer School <a href="https://www.wholecell.org/school-2016"><i class="fi-link"></i></a></li>
+        <li>2016 Whole-Cell Modeling Summer Workshop <a href="https://cri-paris.org/doctoral-school-fdv/academic-program/fdv-courses/introduction-to-multi-algorithm-whole-cell-modeling/"><i class="fi-link"></i></a></li>
+        <li>2015 Whole-Cell Modeling Standards Workshop <a href="https://sites.google.com/site/vwwholecellsummerschool"><i class="fi-link"></i></a></li>
+        </ul>
 	</div>
 </div>
 

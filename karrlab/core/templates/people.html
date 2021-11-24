@@ -7,16 +7,14 @@
 {% block content %}
 <div class="bio">
 
-	<h3>Lab members</h3>
+	<h3>Lab members</h3>    
     {% include "people/chew.html" %}
-	{% include "people/goldberg.html" %}
 	{% include 'people/karr.html' %}
-	{% include 'people/roth.html' %}
-	{% include 'people/pochiraju.html' %}
+	{% include 'people/mak.html' %}
 	{% include 'people/sekar.html' %}
     {% include 'people/shaikh.html' %}
-	{% include 'people/sundstrom.html' %}
-    {% include 'people/szigeti.html' %}    
+	{% include 'people/yang.html' %}
+	{% include 'people/xu.html' %}
 
 	{% comment %}
 	<h3>Honorary lab members</h3>
@@ -25,20 +23,30 @@
 
 	<h3>Alumni</h3>
 	<ul>
-		<li><b>Azraf Anwar</b>: Then: Summer Intern, Now: Undergraduate Student at Columbia University</li>
-		<li><b>Anne Marie Barrette</b>: Then: Rotation Student. Now: PhD student in Marc Birtwistle's Lab at Mount Sinai.</li>
-		<li><b>Laura Deming</b>: Then: Visting Researcher. Now: venture capitalist at the Longevity Fund.</li>
-		<li><b>Graeme Gossel</b>: Then: Postdoctoral Fellow. Now: Postdoctoral Fellow in the Department of Physics &amp; Astronomy at Hunter College</li>
-        <li><b>Samuel Miravet</b>: Then: Visiting PhD Student from the Center for Genomic Regulation. Now: PhD Student at the Center for Genomic Regulation</li>
-        <li><b>Rohan Roy</b>: Then: Summer Intern, Now: Undergraduate Student at Cornell University</li>
+		<li><b>Gabrielle Altman</b>: Then: Summer Intern, Now: Undergraduate Student at Washington University in St. Louis</li>
+        <li><b>Azraf Anwar</b>: Then: Summer Intern, Now: Senior Product Architect at CipherHealth</li>
+		<li><b>Anne Marie Barrette</b>: Then: Rotation Student. Now: Postdoctoral Scholar at Mount Sinai.</li>
+        <li><b>Yassmine Chebaro</b>: Then: Visiting Researcher. Now: Associate Scientist at CNRS.</li>
+		<li><b>Laura Deming</b>: Then: Visting Researcher. Now: Partner at the Longevity Fund.</li>
+		<li><b>Graeme Gossel</b>: Then: Postdoctoral Fellow. Now: Data Scientist at FreightExchange</li>
+		<li><b>Justin Kong</b>: Then: High School Student, Now: Undergraduate Student at Cornell University</li>
+        <li><b>Paul Lang</b>: Then: Visiting PhD Student. Now: PhD Student at Oxford University.</li>
+        <li><b>Wolfram Liebermiester</b>: Then: Visiting Scientist. Now: Scientist at INRA Jouy-en-Josas.</li>
+        <li><b>Samuel Miravet</b>: Then: Visiting PhD Student. Now: PhD Student at the Center for Genomic Regulation</li>
+        <li><b>Saahith Pochiraju</b>: Then: Bioinformatician. Now: Trading Engineer at Flow Traders</li>
+        <li><b>Rohan Roy</b>: Then: Summer Intern, Now: MD/PhD Student at the Tri-Institutional MD-PhD Program of Weill Cornell, Rockefeller, and Sloan Kettering</li>
+        <li><b>Robert Ruzic</b>: Then: Winter Intern, Now: Undergraduate Student at Stony Brook University</li>
         <li><b>Ashwin Srinivasan</b>: Then: Summer Intern, Now: Undergraduate Student at MIT</li>
 		<li><b>Eric Sun</b>: Then: Winter Intern, Now: Undergraduate Student at Harvard University</li>
-        <li><b>Catherine Wu</b>: Then: Winter Intern, Now: Undergraduate Student at Harvard University</li>
+        <li><b>Balazs Szigeti</b>: Then: Postdoctoral Scholar, Now: Postdoctoral Scholar</li>
+        <li><b>Catherine Wu</b>: Then: Winter Intern, Now: Associate Product Manager at Mastercard</li>
         <li><b>Catherine Wang</b>: Then: Winter Intern, Now: Undergraduate Student at Harvard University</li>
+        <li><b>Mike Zheng</b>: Then: Winter Intern, Now: PhD Student at Cold Spring Harbor</li>
 	</ul>
 
 	See our <a href="{% url 'alumni' %}">alumni page</a> for more information.
 
+    {% comment %}
 	<h3>Collaborators</h3>
 	<ul>
 		<li>Yonathan Arfi, INRA <a href="https://fr.linkedin.com/in/yonathanarfi"><i class="fi-social-linkedin"></i></a></li>
@@ -51,8 +59,7 @@
 		<li>Luis Serrano, CRG <a href="https://sb.crg.es/serrano_lab/"><i class="fi-link"></i></a></li>
 		<li>Pascal Sirand, INRA</li>
 		<li>Jörg Stülke, University of Göttingen <a href="https://www.uni-goettingen.de/en/58040.html"><i class="fi-link"></i></a></li>
-
-		{% comment %}
+		
 		<li>Akira Funahashi, Keio <a href="https://fun.bio.keio.ac.jp/"><i class="fi-link"></i></a></li>
 		<li>Jonathan Irish, Vanderbilt University <a href="https://my.vanderbilt.edu/irishlab/"><i class="fi-link"></i></a></li>
 		<li>Nikesh Kotecha, Cytobank <a href="https://www.cytobank.org/"><i class="fi-link"></i></a></li>
@@ -60,9 +67,9 @@
 		<li>Dariusz Plewczynski, University of Warsaw <a href="https://business2science.com/"><i class="fi-link"></i></a></li>
 		<li>Oliver Purcell, MIT <a href="https://www.linkedin.com/pub/oliver-purcell/15/325/306"><i class="fi-social-linkedin"></i></a></li>
 		<li>Koichi Takahasi, RIKEN <a href="https://www.qbic.riken.jp/english/research/outline/lab-11.html"><i class="fi-link"></i></a></li>
-		<li>Gustavo Stolovitzky, IBM &amp; Mt Sinai <a href="https://researcher.watson.ibm.com/researcher/view.php?person=us-gustavo"><i class="fi-link"></i></a></li>
-		{% endcomment %}
+		<li>Gustavo Stolovitzky, IBM &amp; Mt Sinai <a href="https://researcher.watson.ibm.com/researcher/view.php?person=us-gustavo"><i class="fi-link"></i></a></li>		
 	</ul>
+    {% endcomment %}
 
 	<h3>Lab photos</h3>
 	{% include 'people/photos.html' %}
